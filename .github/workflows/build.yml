@@ -1,0 +1,51 @@
+name: Build e testes NPC AI ARM64
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  android:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compilar DEX do editor e HTTPS Android
+        run: ./tools/build_keyboard.sh
+      - name: Testes de INI, diagnóstico, inteligência, animações, HTTP, worker e UI
+        run: |
+          mkdir -p docs/validation
+          set -o pipefail
+          ./tools/test.sh 2>&1 | tee docs/validation/tests-host.txt
+      - uses: android-actions/setup-android@v3
+      - name: Instalar NDK r27d
+        run: sdkmanager 'ndk;27.3.13750724'
+      - name: Preparar dependências e compilar arm64-v8a
+        run: |
+          set -o pipefail
+          export ANDROID_NDK_HOME="$ANDROID_HOME/ndk/27.3.13750724"
+          python3 -m pip install patchelf
+          ./tools/build_tts.sh 2>&1 | tee docs/validation/build-kokoro.txt
+          ./build.sh 2>&1 | tee docs/validation/build-android.txt
+      - name: Conferir ELF e dependências Android
+        run: |
+          python3 tools/verify_elf.py libs/arm64-v8a/libnpcai.so
+          readelf -h -d -lW libs/arm64-v8a/libnpcai.so > docs/validation/elf.txt
+      - name: Distribuição com fonte completo e licenças
+        run: |
+          python3 tools/package.py
+          python3 tools/package_install.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: npcai-2.4.0-android-2.10-arm64
+          if-no-files-found: error
+          path: |
+            libs/arm64-v8a/libnpcai.so
+            dist/NPC_AI_2.4.0_ARM64.zip
+            dist/NPC_AI_2.4.0_Install_ARM64.zip
+            dist/SHA256SUMS
+            docs/validation

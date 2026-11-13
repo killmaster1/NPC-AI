@@ -1,0 +1,3 @@
+ELF OK: ARM64, AML exports, páginas 16 KiB; NEEDED=libc.so, libdl.so, liblog.so, libm.so
+runtime/arm64-v8a/libnpcai_kokoro.so Android ARM64; min API <=26; static C++; 16 KiB LOAD; closure OK: libandroid.so,libc.so,libdl.so,liblog.so,libm.so,libnpcai_kokoro_ort.so
+runtime/arm64-v8a/libnpcai_kokoro_ort.so Android ARM64; min API <=26; static C++; 16 KiB LOAD; closure OK: libc.so,libdl.so,liblog.so,libm.so

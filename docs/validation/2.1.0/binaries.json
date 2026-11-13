@@ -1,0 +1,18 @@
+{
+  "libnpcai.so": {
+    "bytes": 3178744,
+    "sha256": "6baa8008753aa6e77134858b5605571b4afc5c0463a4fb41575c06ce4e307215"
+  },
+  "libnpcai_piper.so": {
+    "bytes": 4982360,
+    "sha256": "a72b1dc557d737d79cea8a309508999cf9a5e02907f35fdb7724b881426bccd4"
+  },
+  "libnpcai_ort.so": {
+    "bytes": 18214224,
+    "sha256": "999ecfdb5b5a13e4097487773b6d71ce8a075408a237daab072e8f5e817bd78e"
+  },
+  "classes.dex": {
+    "bytes": 34816,
+    "sha256": "ce95f35a1fac925494c20349fc89199a6ce25b694de25dbdbc51d828bca0045c"
+  }
+}

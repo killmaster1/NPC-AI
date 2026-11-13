@@ -1,0 +1,2 @@
+#pragma once
+static constexpr const char* npcaiKokoroManifestHash="2e9f86e4119ef62fc64997b738ece0dd25ad5fbdff0186ce36a13bb23485e1cc";

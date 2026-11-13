@@ -1,0 +1,1 @@
+HOST REAL Piper/Faber: model_load=0.725s chunks=5 audio=9.439s total=1.675s PCM finite/nonzero, UTF-8, accents, cancel/reuse OK. Android not tested.

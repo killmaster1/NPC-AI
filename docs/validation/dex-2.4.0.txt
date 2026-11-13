@@ -1,0 +1,13 @@
+----------
+1. WARNING in /workspace/npcai-android-starter/android/br/com/npcai/NativeEleven.java (at line 95)
+	boolean catalog=voice.isEmpty();URL url=new URL(catalog?"https://api.elevenlabs.io/v2/voices?page_size=100":"https://api.elevenlabs.io/v1/text-to-speech/"+voice+"?output_format=pcm_24000");
+	                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor URL(String) is deprecated
+----------
+----------
+2. WARNING in /workspace/npcai-android-starter/android/br/com/npcai/NativeServices.java (at line 138)
+	URL url=new URL("https://generativelanguage.googleapis.com/v1beta/models/"+model+":generateContent");
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor URL(String) is deprecated
+----------
+2 problems (2 warnings)

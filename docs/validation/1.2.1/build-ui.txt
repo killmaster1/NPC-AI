@@ -1,0 +1,5 @@
+Dependências verificadas: 366 arquivos vendorizados
+[arm64-v8a] Compile++      : npcai <= ui.cpp
+[arm64-v8a] SharedLibrary  : libnpcai.so
+[arm64-v8a] Install        : libnpcai.so => libs/arm64-v8a/libnpcai.so
+ELF OK: ARM64, AML exports, páginas 16 KiB; NEEDED=libc.so, libdl.so, liblog.so, libm.so

@@ -1,0 +1,7 @@
+----------
+1. WARNING in /workspace/npcai-android-starter/android/br/com/npcai/NativeServices.java (at line 138)
+	URL url=new URL("https://generativelanguage.googleapis.com/v1beta/models/"+model+":generateContent");
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor URL(String) is deprecated
+----------
+1 problem (1 warning)

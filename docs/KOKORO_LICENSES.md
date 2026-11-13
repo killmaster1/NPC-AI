@@ -1,0 +1,12 @@
+# Licenças e fontes — NPC AI 2.3.0
+
+- Plugin e integração NPC AI: GPL-3.0-or-later, texto em `LICENSE`. Distribuição inclui fontes e scripts correspondentes em `NPC_AI_2.3.0_ARM64.zip`.
+- Sherpa-ONNX **v1.12.23**, commit registrado em `tts/dependencies.json`: Apache-2.0, `third_party/sherpa/LICENSE`; arquivo de fontes exato em `third_party/sherpa/source/sherpa-v1.12.23.tar.gz`.
+- Modelo **Kokoro-82M**, pacote brasileiro `cristianoaredes/kokoro-pt-br`, revisão `b1732c1ad3dd750090d36b07a4322ff2ca125e16`: Apache-2.0 conforme README do pacote. O cartão original está preservado em `tts/KOKORO_MODEL_CARD.md` e no pacote de modelo. Fonte base: `hexgrad/Kokoro-82M`. Pacote sem modificações de pesos, FP32, speakers documentados 42/43/44. Manifesto acrescentado apenas para integridade.
+- eSpeak NG, fork exato `csukuangfj/espeak-ng@f6fed6c58b5e0998b8e68c6610125e2d07d595a7`: GPL-3.0-or-later e exceções/notas por componente. ZIP de fontes original incluído em `third_party/sherpa/source/` e licenças em `tts/licenses`. Dados eSpeak do pacote mantidos integralmente. A combinação distribuída mantém os termos GPL compatíveis; não basta distribuir somente um `.so` fechado.
+- **piper-phonemize** MIT, fork `78a788e0b719013401572d70fef372e77bff8e43`: dependência interna de fonemização do Sherpa, com licença preservada. É reutilizável pelo Kokoro e não é o motor Piper TTS que foi removido. Não acompanha modelo Faber/Jeff/Cadu/Edresson nem libnpcai_piper.
+- ONNX Runtime **1.22.0** Android oficial, MIT, headers correspondentes, LICENSE e ThirdPartyNotices em `third_party/onnxruntime`. A biblioteca tem nota Android API24. Usada com Sherpa recompilado/API26; não se distribui a ORT API27 do pacote Sherpa pronto.
+- Dependências transitivas de Sherpa (kaldi-native-fbank, kaldi-decoder, kaldifst/OpenFst, kissfft, Eigen, simple-sentencepiece) e componentes terceiros mantêm seus próprios avisos. Licenças coletadas em `tts/licenses`; CMake upstream fixa URLs e SHA-256. Partes de ASR não são usadas para voz, embora a API C comum as referencie no módulo compilado.
+- Dear ImGui, AML, SDK e RenderWare headers mantêm as licenças já presentes no projeto. Não se distribuem executáveis GTA, APK, recursos comerciais do jogo nem credenciais.
+
+Ao redistribuir, mantenha os cartões do modelo, avisos, textos de licença, as fontes GPL correspondentes e a receita de build. Não suponha que a licença Apache do modelo remova as obrigações GPL da biblioteca que o executa. O usuário deve possuir sua própria cópia do GTA.

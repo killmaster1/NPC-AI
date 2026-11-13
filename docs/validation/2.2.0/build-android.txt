@@ -1,0 +1,1939 @@
+Dependências verificadas: 368 arquivos vendorizados
+[arm64-v8a] Compile++      : npcai <= tts.cpp
+[arm64-v8a] Compile++      : npcai <= piper_backend.cpp
+[arm64-v8a] Compile++      : npcai <= main.cpp
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:416:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  416 | DECL_VALUE_PLT_I16(s_ConversationLength, BYBIT(0x675F2C, 0x849EC8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:417:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  417 | DECL_VALUE_PLT_U8(s_bForceAudible, BYBIT(0x6761AC, 0x84A3B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:420:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  420 | DECL_VALUE_PLT_I16(s_NextSpeechSlot, BYBIT(0x679308, 0x850628));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:423:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  423 | DECL_VALUE_PLT_I16(s_pConversationPedSlot1, BYBIT(0x676374, 0x84A740));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:424:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  424 | DECL_VALUE_PLT_I16(s_pConversationPedSlot2, BYBIT(0x676D9C, 0x84BB80));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:426:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  426 | DECL_VALUE_PLT_U8(s_bPedConversationHappening, BYBIT(0x678928, 0x84F270));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:427:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  427 | DECL_VALUE_PLT_U8(s_bPlayerConversationHappening, BYBIT(0x677ADC, 0x84D5E0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:428:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  428 | DECL_VALUE_PLT_U8(s_bAllSpeechDisabled, BYBIT(0x678468, 0x84E8E8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:429:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  429 | DECL_VALUE_PLT_U8(s_bAPlayerSpeaking, BYBIT(0x678390, 0x84E738));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:430:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  430 | DECL_VALUE_PLT_U32(s_nCJMoodOverrideTime, BYBIT(0x679138, 0x850298));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:431:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  431 | DECL_VALUE_PLT_I16(s_nCJBasicMood, BYBIT(0x6762F8, 0x84A650));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:432:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  432 | DECL_VALUE_PLT_I16(s_nCJGangBanging, BYBIT(0x67705C, 0x84C0F0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:433:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  433 | DECL_VALUE_PLT_I16(s_nCJFat, BYBIT(0x679A54, 0x8514C8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:434:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  434 | DECL_VALUE_PLT_I16(s_nCJWellDressed, BYBIT(0x676340, 0x84A6D8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:796:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  796 | DECL_VALUE_PLT_I16(s_NextDummyEngineSlot, BYBIT(0x6766C8, 0x84ADE8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:797:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  797 | DECL_VALUE_PLT_U8(s_HelicoptorsDisabled, BYBIT(0x676D74, 0x84BB30));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1083:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1083 | DECL_VALUE_PLT_FLT(m_sfRainVolume, BYBIT(0x678250, 0x84E4B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1084:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1084 | DECL_VALUE_PLT_I16(m_snLastRainDropSoundID, BYBIT(0x67782C, 0x84D080));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1105:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1105 | DECL_VALUE_PLT_I8(m_snLastFireFrequencyIndex, BYBIT(0x676460, 0x84A918));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:219:5: note: expanded from macro 'DECL_VALUE_PLT_I8'
+  219 |     DECL_VALUE_NUMBER_BASE(i8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1189:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1189 | DECL_VALUE_PLT_U32(s_NextNewScannerDialogueTime, BYBIT(0x676C3C, 0x84B8C0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1197:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1197 | DECL_VALUE_PLT_U32(s_nPlaybackStartTime, BYBIT(0x6762BC, 0x84A5D8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1198:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1198 | DECL_VALUE_PLT_U32(s_nAbortPlaybackTime, BYBIT(0x679904, 0x851228));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1202:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1202 | DECL_VALUE_PLT_FLT(s_fVolumeOffset, BYBIT(0x678588, 0x84EB28));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+23 warnings generated.
+[arm64-v8a] Compile++      : npcai <= ui.cpp
+[arm64-v8a] Compile++      : npcai <= game_bridge.cpp
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:201:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  201 | DECL_VALUE_PLT_FLT(WEAPON_RE_AIM_RATE, BYBIT(0x676AF8, 0x84B638));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:542:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  542 | DECL_VALUE_PLT_FLT(ms_fMaxStuckVelocity, BYBIT(0x6769E8, 0x84B418));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:597:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  597 | DECL_VALUE_PLT_FLT(ms_fMinForStretchGrab, BYBIT(0x679624, 0x850C58));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:598:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  598 | DECL_VALUE_PLT_FLT(ms_fHangingOffsetHorz, BYBIT(0x67813C, 0x84E290));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:599:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  599 | DECL_VALUE_PLT_FLT(ms_fHangingOffsetVert, BYBIT(0x676714, 0x84AE80));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:600:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  600 | DECL_VALUE_PLT_FLT(ms_fAtEdgeOffsetHorz, BYBIT(0x67631C, 0x84A690));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:601:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  601 | DECL_VALUE_PLT_FLT(ms_fAtEdgeOffsetVert, BYBIT(0x6769A8, 0x84B3A0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:602:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  602 | DECL_VALUE_PLT_FLT(ms_fStandUpOffsetHorz, BYBIT(0x676648, 0x84ACE8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:603:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  603 | DECL_VALUE_PLT_FLT(ms_fStandUpOffsetVert, BYBIT(0x678AE0, 0x84F5E8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:604:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  604 | DECL_VALUE_PLT_FLT(ms_fVaultOffsetHorz, BYBIT(0x6783E8, 0x84E7E8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:605:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  605 | DECL_VALUE_PLT_FLT(ms_fVaultOffsetVert, BYBIT(0x676AC0, 0x84B5C8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:670:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  670 | DECL_VALUE_PLT_FLT(THRUST_NOMINAL, BYBIT(0x679C0C, 0x851830));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:671:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  671 | DECL_VALUE_PLT_FLT(THRUST_FULL, BYBIT(0x67623C, 0x84A4D8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:672:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  672 | DECL_VALUE_PLT_FLT(THRUST_STRAFE, BYBIT(0x679A3C, 0x851490));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:673:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  673 | DECL_VALUE_PLT_FLT(THRUST_STOP, BYBIT(0x677C4C, 0x84D8B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:674:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  674 | DECL_VALUE_PLT_FLT(THRUST_MAX_ANGLE, BYBIT(0x67911C, 0x850260));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:675:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  675 | DECL_VALUE_PLT_FLT(THRUST_MOVE_DAMPING, BYBIT(0x678B74, 0x84F710));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:676:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  676 | DECL_VALUE_PLT_FLT(JETPACK_TURN_RATE, BYBIT(0x676A70, 0x84B528));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:677:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  677 | DECL_VALUE_PLT_FLT(JETPACK_ANGLE_RATE, BYBIT(0x678148, 0x84E2A8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:678:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  678 | DECL_VALUE_PLT_FLT(LEG_SWING_MAX_ANGLE, BYBIT(0x676A38, 0x84B4B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:679:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  679 | DECL_VALUE_PLT_FLT(LEG_SWING_DELTA_V_MULT, BYBIT(0x679E44, 0x851C98));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:680:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  680 | DECL_VALUE_PLT_FLT(LEG_SWING_GRAVITY_MULT, BYBIT(0x678744, 0x84EEB0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:681:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  681 | DECL_VALUE_PLT_FLT(LEG_SWING_DAMP_FRAC, BYBIT(0x679E78, 0x851D00));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:756:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  756 | DECL_VALUE_PLT_FLT(SWIM_STOP_TIME, BYBIT(0x677B7C, 0x84D718));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:10:
+./third_party/base/plugin-sdk/game_sa/ai/tasks/TaskTypes.h:757:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  757 | DECL_VALUE_PLT_FLT(SWIM_DIVE_UNDER_ANGLE, BYBIT(0x67983C, 0x851088));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:23:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   23 |     DECL_VALUE_PLT_U32(m_snTimeInMilliseconds, BYBIT(0x676FFC, 0x84C030));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:24:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   24 |     DECL_VALUE_PLT_U32(m_snTimeInMillisecondsNonClipped, BYBIT(0x679DBC, 0x851B90));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:25:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   25 |     DECL_VALUE_PLT_U32(m_snTimeInMillisecondsPauseMode, BYBIT(0x677A2C, 0x84D480));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:26:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   26 |     DECL_VALUE_PLT_U32(m_snPreviousTimeInMilliseconds, BYBIT(0x6779AC, 0x84D388));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:27:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   27 |     DECL_VALUE_PLT_U32(m_snPPreviousTimeInMilliseconds, BYBIT(0x679D3C, 0x851A90));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:28:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   28 |     DECL_VALUE_PLT_U32(m_snPPPreviousTimeInMilliseconds, BYBIT(0x677DF8, 0x84DC10));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:29:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   29 |     DECL_VALUE_PLT_U32(m_snPPPPreviousTimeInMilliseconds, BYBIT(0x6794A4, 0x850960));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:30:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   30 |     DECL_VALUE_PLT_U32(m_snPreviousTimeInMillisecondsNonClipped, BYBIT(0x677600, 0x84CC30));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:31:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   31 |     DECL_VALUE_PLT_FLT(ms_fTimeScale, BYBIT(0x6768A8, 0x84B1A8));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:32:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   32 |     DECL_VALUE_PLT_FLT(ms_fSlowMotionScale, BYBIT(0x676B24, 0x84B690));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:33:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   33 |     DECL_VALUE_PLT_FLT(ms_fTimeStep, BYBIT(0x677714, 0x84CE50));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:34:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   34 |     DECL_VALUE_PLT_FLT(ms_fTimeStepNonClipped, BYBIT(0x6799B4, 0x851380));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:35:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   35 |     DECL_VALUE_PLT_FLT(ms_fOldTimeStep, BYBIT(0x676C08, 0x84B858));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:36:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   36 |     DECL_VALUE_PLT_FLT(game_FPS, BYBIT(0x67767C, 0x84CD28));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:37:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   37 |     DECL_VALUE_PLT_U32(m_FrameCounter, BYBIT(0x678930, 0x84F280));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:38:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   38 |     DECL_VALUE_PLT_BOOL(m_UserPause, BYBIT(0x6776B0, 0x84CD90));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:39:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   39 |     DECL_VALUE_PLT_BOOL(m_CodePause, BYBIT(0x6794C4, 0x8509A0));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:40:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   40 |     DECL_VALUE_PLT_BOOL(bSlowMotionActive, BYBIT(0x6786A0, 0x84ED68));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:13:
+./third_party/base/plugin-sdk/game_sa/base/Timer.h:41:5: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   41 |     DECL_VALUE_PLT_BOOL(bSkipProcessThisFrame, BYBIT(0x679250, 0x8504B8));
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:416:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  416 | DECL_VALUE_PLT_I16(s_ConversationLength, BYBIT(0x675F2C, 0x849EC8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:417:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  417 | DECL_VALUE_PLT_U8(s_bForceAudible, BYBIT(0x6761AC, 0x84A3B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:420:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  420 | DECL_VALUE_PLT_I16(s_NextSpeechSlot, BYBIT(0x679308, 0x850628));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:423:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  423 | DECL_VALUE_PLT_I16(s_pConversationPedSlot1, BYBIT(0x676374, 0x84A740));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:424:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  424 | DECL_VALUE_PLT_I16(s_pConversationPedSlot2, BYBIT(0x676D9C, 0x84BB80));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:426:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  426 | DECL_VALUE_PLT_U8(s_bPedConversationHappening, BYBIT(0x678928, 0x84F270));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:427:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  427 | DECL_VALUE_PLT_U8(s_bPlayerConversationHappening, BYBIT(0x677ADC, 0x84D5E0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:428:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  428 | DECL_VALUE_PLT_U8(s_bAllSpeechDisabled, BYBIT(0x678468, 0x84E8E8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:429:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  429 | DECL_VALUE_PLT_U8(s_bAPlayerSpeaking, BYBIT(0x678390, 0x84E738));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:430:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  430 | DECL_VALUE_PLT_U32(s_nCJMoodOverrideTime, BYBIT(0x679138, 0x850298));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:431:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  431 | DECL_VALUE_PLT_I16(s_nCJBasicMood, BYBIT(0x6762F8, 0x84A650));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:432:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  432 | DECL_VALUE_PLT_I16(s_nCJGangBanging, BYBIT(0x67705C, 0x84C0F0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:433:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  433 | DECL_VALUE_PLT_I16(s_nCJFat, BYBIT(0x679A54, 0x8514C8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:434:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  434 | DECL_VALUE_PLT_I16(s_nCJWellDressed, BYBIT(0x676340, 0x84A6D8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:796:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  796 | DECL_VALUE_PLT_I16(s_NextDummyEngineSlot, BYBIT(0x6766C8, 0x84ADE8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:797:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  797 | DECL_VALUE_PLT_U8(s_HelicoptorsDisabled, BYBIT(0x676D74, 0x84BB30));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1083:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1083 | DECL_VALUE_PLT_FLT(m_sfRainVolume, BYBIT(0x678250, 0x84E4B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1084:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1084 | DECL_VALUE_PLT_I16(m_snLastRainDropSoundID, BYBIT(0x67782C, 0x84D080));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1105:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1105 | DECL_VALUE_PLT_I8(m_snLastFireFrequencyIndex, BYBIT(0x676460, 0x84A918));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:219:5: note: expanded from macro 'DECL_VALUE_PLT_I8'
+  219 |     DECL_VALUE_NUMBER_BASE(i8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1189:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1189 | DECL_VALUE_PLT_U32(s_NextNewScannerDialogueTime, BYBIT(0x676C3C, 0x84B8C0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1197:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1197 | DECL_VALUE_PLT_U32(s_nPlaybackStartTime, BYBIT(0x6762BC, 0x84A5D8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1198:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1198 | DECL_VALUE_PLT_U32(s_nAbortPlaybackTime, BYBIT(0x679904, 0x851228));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:15:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1202:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1202 | DECL_VALUE_PLT_FLT(s_fVolumeOffset, BYBIT(0x678588, 0x84EB28));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:16:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/PlayerPed.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/Ped.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Weapon.h:86:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   86 | DECL_VALUE_PLT_BOOL(bPhotographHasBeenTaken, BYBIT(0x6761F0, 0x84A440));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:16:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/PlayerPed.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/Ped.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Weapon.h:87:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   87 | DECL_VALUE_PLT_BOOL(ms_bTakePhoto, BYBIT(0x67852C, 0x84EA70));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:16:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/PlayerPed.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/Ped.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Weapon.h:88:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   88 | DECL_VALUE_PLT_I32(m_nTakePhotoFrames, BYBIT(0x678A94, 0x84F550));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:163:5: note: expanded from macro 'DECL_VALUE_PLT_I32'
+  163 |     DECL_VALUE_NUMBER_BASE(i32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:16:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/PlayerPed.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/Ped.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Weapon.h:90:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   90 | DECL_VALUE_PLT_FLT(ms_fExtinguisherAimAngle, BYBIT(0x679FCC, 0x851FA8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:16:
+In file included from ./third_party/base/plugin-sdk/game_sa/entity/PlayerPed.h:4:
+./third_party/base/plugin-sdk/game_sa/entity/Ped.h:219:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  219 | DECL_VALUE_PLT_U16(m_sGunFlashBlendStart, BYBIT(0x6782BC, 0x84E590));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:237:5: note: expanded from macro 'DECL_VALUE_PLT_U16'
+  237 |     DECL_VALUE_NUMBER_BASE(u16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:122:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  122 | DECL_VALUE_PLT_FLT(DOOR_SPEED_MAX_CAPPED, BYBIT(0x677BC8, 0x84D7B0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:326:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  326 | DECL_VALUE_PLT_FLT(WHEELSPIN_TARGET_RATE, BYBIT(0x677194, 0x84C358));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:327:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  327 | DECL_VALUE_PLT_FLT(WHEELSPIN_INAIR_TARGET_RATE, BYBIT(0x677000, 0x84C038));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:328:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  328 | DECL_VALUE_PLT_FLT(WHEELSPIN_RISE_RATE, BYBIT(0x67811C, 0x84E250));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:329:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  329 | DECL_VALUE_PLT_FLT(WHEELSPIN_FALL_RATE, BYBIT(0x676BF0, 0x84B828));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:330:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  330 | DECL_VALUE_PLT_U8(ms_forceVehicleLightsOff, BYBIT(0x679D90, 0x851B38));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:331:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  331 | DECL_VALUE_PLT_BOOL(s_bPlaneGunsEjectShellCasings, BYBIT(0x676740, 0x84AED8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:332:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  332 | DECL_VALUE_PLT_FLT(m_fAirResistanceMult, BYBIT(0x678FAC, 0x84FF80));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:333:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  333 | DECL_VALUE_PLT_FLT(ms_fRailTrackResistance, BYBIT(0x6787AC, 0x84EF80));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:334:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  334 | DECL_VALUE_PLT_FLT(ms_fRailTrackResistanceDefault, BYBIT(0x679A78, 0x851510));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:335:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  335 | DECL_VALUE_PLT_BOOL(bDisableRemoteDetonation, BYBIT(0x677384, 0x84C740));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:336:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  336 | DECL_VALUE_PLT_BOOL(bDisableRemoteDetonationOnContact, BYBIT(0x676F18, 0x84BE70));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:337:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  337 | DECL_VALUE_PLT_BOOL(m_bEnableMouseSteering, BYBIT(0x676FEC, 0x84C010));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:17:
+./third_party/base/plugin-sdk/game_sa/entity/Vehicle.h:338:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  338 | DECL_VALUE_PLT_BOOL(m_bEnableMouseFlying, BYBIT(0x677014, 0x84C060));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:18:
+./third_party/base/plugin-sdk/game_sa/engine/ModelInfo.h:354:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  354 | DECL_VALUE_PLT_BOOL(m_bCreateDamagedVersion, BYBIT(0x677244, 0x84C4C0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:18:
+./third_party/base/plugin-sdk/game_sa/engine/ModelInfo.h:411:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  411 | DECL_VALUE_PLT_I32(ms_lastPositionSearched, BYBIT(0x676B64, 0x84B710));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:163:5: note: expanded from macro 'DECL_VALUE_PLT_I32'
+  163 |     DECL_VALUE_NUMBER_BASE(i32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/ai/PedIntelligence.h:5:
+./third_party/base/plugin-sdk/game_sa/ai/Scanner.h:118:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  118 | DECL_VALUE_PLT_I32(ms_iAcquaintanceScanPeriod, BYBIT(0x677430, 0x84C898));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:163:5: note: expanded from macro 'DECL_VALUE_PLT_I32'
+  163 |     DECL_VALUE_NUMBER_BASE(i32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/ai/PedIntelligence.h:5:
+./third_party/base/plugin-sdk/game_sa/ai/Scanner.h:119:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  119 | DECL_VALUE_PLT_I32(ms_iAcquaintanceLatencyPeriodDefinite, BYBIT(0x677B9C, 0x84D758));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:163:5: note: expanded from macro 'DECL_VALUE_PLT_I32'
+  163 |     DECL_VALUE_NUMBER_BASE(i32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/ai/PedIntelligence.h:5:
+./third_party/base/plugin-sdk/game_sa/ai/Scanner.h:120:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  120 | DECL_VALUE_PLT_I32(ms_iAcquaintanceLatencyPeriodMaybe, BYBIT(0x676C6C, 0x84B920));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:163:5: note: expanded from macro 'DECL_VALUE_PLT_I32'
+  163 |     DECL_VALUE_NUMBER_BASE(i32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/ai/PedIntelligence.h:5:
+./third_party/base/plugin-sdk/game_sa/ai/Scanner.h:121:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  121 | DECL_VALUE_PLT_FLT(ms_fThresholdDotProduct, BYBIT(0x67871C, 0x84EE60));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/ai/PedIntelligence.h:5:
+./third_party/base/plugin-sdk/game_sa/ai/Scanner.h:253:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  253 | DECL_VALUE_PLT_U32(m_sDeadPedWalkingTimer, BYBIT(0x679798, 0x850F38));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:4:
+./third_party/base/plugin-sdk/game_sa/ai/PedIntelligence.h:367:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  367 | DECL_VALUE_PLT_I32(ms_iDesiredMoveState, BYBIT(0x676F38, 0x84BEB0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:163:5: note: expanded from macro 'DECL_VALUE_PLT_I32'
+  163 |     DECL_VALUE_NUMBER_BASE(i32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:96:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   96 | DECL_VALUE_PLT_FLT(BOUNCE_SPRING_DAMP_MULT, BYBIT(0x678E60, 0x84FCE8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:97:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   97 | DECL_VALUE_PLT_FLT(BOUNCE_SPRING_RETURN_MULT, BYBIT(0x6787EC, 0x84F000));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:98:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   98 | DECL_VALUE_PLT_FLT(BOUNCE_VEL_CHANGE_LIMIT, BYBIT(0x6779B0, 0x84D390));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:99:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   99 | DECL_VALUE_PLT_FLT(BOUNCE_HANGING_DAMP_MULT, BYBIT(0x67789C, 0x84D160));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:100:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  100 | DECL_VALUE_PLT_FLT(BOUNCE_HANGING_RETURN_MULT, BYBIT(0x676B54, 0x84B6F0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:243:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  243 | DECL_VALUE_PLT_U8(m_sAllTaxiLights, BYBIT(0x679FA4, 0x851F58));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:465:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  465 | DECL_VALUE_PLT_FLT(DUMPER_COL_ANGLEMULT, BYBIT(0x676FA8, 0x84BF88));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:508:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  508 | DECL_VALUE_PLT_FLT(m_fTrailerSuspensionForce, BYBIT(0x677F00, 0x84DE20));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:509:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  509 | DECL_VALUE_PLT_FLT(m_fTrailerDampingForce, BYBIT(0x6799FC, 0x851410));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:644:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  644 | DECL_VALUE_PLT_U32(NumberOfSearchLights, BYBIT(0x678A88, 0x84F538));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:645:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  645 | DECL_VALUE_PLT_U32(TestForNewRandomHelisTimer, BYBIT(0x676A04, 0x84B450));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:646:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  646 | DECL_VALUE_PLT_BOOL(bPoliceHelisAllowed, BYBIT(0x6760B0, 0x84A1D0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:647:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  647 | DECL_VALUE_PLT_BOOL(bHeliControlsCheat, BYBIT(0x6789B4, 0x84F388));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:738:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  738 | DECL_VALUE_PLT_I32(GenPlane_Status, BYBIT(0x678C30, 0x84F888));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:163:5: note: expanded from macro 'DECL_VALUE_PLT_I32'
+  163 |     DECL_VALUE_NUMBER_BASE(i32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:739:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  739 | DECL_VALUE_PLT_I32(GenPlane_ModelIndex, BYBIT(0x67771C, 0x84CE60));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:163:5: note: expanded from macro 'DECL_VALUE_PLT_I32'
+  163 |     DECL_VALUE_NUMBER_BASE(i32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:740:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  740 | DECL_VALUE_PLT_U32(GenPlane_LastTimeGenerated, BYBIT(0x6795B8, 0x850B80));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:741:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  741 | DECL_VALUE_PLT_BOOL(GenPlane_Active, BYBIT(0x676650, 0x84ACF8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:742:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  742 | DECL_VALUE_PLT_FLT(ANDROM_COL_ANGLE_MULT, BYBIT(0x679730, 0x850E68));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:743:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  743 | DECL_VALUE_PLT_I16(HARRIER_NOZZLE_ROTATE_LIMIT, BYBIT(0x6785BC, 0x84EB90));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:744:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  744 | DECL_VALUE_PLT_I16(HARRIER_NOZZLE_SWITCH_LIMIT, BYBIT(0x677774, 0x84CF10));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:745:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  745 | DECL_VALUE_PLT_FLT(PLANE_MIN_PROP_SPEED, BYBIT(0x6797A8, 0x850F58));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:746:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  746 | DECL_VALUE_PLT_FLT(PLANE_STD_PROP_SPEED, BYBIT(0x677C1C, 0x84D858));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:747:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  747 | DECL_VALUE_PLT_FLT(PLANE_MAX_PROP_SPEED, BYBIT(0x677798, 0x84CF58));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:19:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Pools.h:6:
+./third_party/base/plugin-sdk/game_sa/entity/Automobile.h:748:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  748 | DECL_VALUE_PLT_FLT(PLANE_ROC_PROP_SPEED, BYBIT(0x677B50, 0x84D6C0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:20:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   20 | DECL_VALUE_PLT_U32(ms_nMillisecondsPerGameMinute, BYBIT(0x679524, 0x850A58));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:21:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   21 | DECL_VALUE_PLT_U32(ms_nLastClockTick, BYBIT(0x677B4C, 0x84D6B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:22:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   22 | DECL_VALUE_PLT_U8(ms_nGameClockMonths, BYBIT(0x678DA4, 0x84FB70));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:23:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   23 | DECL_VALUE_PLT_U8(ms_nGameClockDays, BYBIT(0x678720, 0x84EE68));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:24:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   24 | DECL_VALUE_PLT_U8(ms_nGameClockHours, BYBIT(0x679B40, 0x8516A0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:25:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   25 | DECL_VALUE_PLT_U8(ms_nGameClockMinutes, BYBIT(0x676270, 0x84A540));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:26:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   26 | DECL_VALUE_PLT_U16(ms_nGameClockSeconds, BYBIT(0x676640, 0x84ACD8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:237:5: note: expanded from macro 'DECL_VALUE_PLT_U16'
+  237 |     DECL_VALUE_NUMBER_BASE(u16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:27:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   27 | DECL_VALUE_PLT_U8(CurrentDay, BYBIT(0x678548, 0x84EAA8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:28:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   28 | DECL_VALUE_PLT_U8(ms_Stored_nGameClockMonths, BYBIT(0x678FF4, 0x850010));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:29:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   29 | DECL_VALUE_PLT_U8(ms_Stored_nGameClockDays, BYBIT(0x679F20, 0x851E50));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:30:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   30 | DECL_VALUE_PLT_U8(ms_Stored_nGameClockHours, BYBIT(0x678E24, 0x84FC70));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:31:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   31 | DECL_VALUE_PLT_U8(ms_Stored_nGameClockMinutes, BYBIT(0x675EF4, 0x849E58));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:32:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   32 | DECL_VALUE_PLT_U16(ms_Stored_nGameClockSeconds, BYBIT(0x676BC8, 0x84B7D8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:237:5: note: expanded from macro 'DECL_VALUE_PLT_U16'
+  237 |     DECL_VALUE_NUMBER_BASE(u16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:20:
+./third_party/base/plugin-sdk/game_sa/other/Clock.h:33:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   33 | DECL_VALUE_PLT_BOOL(bClockHasBeenStored, BYBIT(0x6798A8, 0x851168));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:187:5: note: expanded from macro 'DECL_VALUE_PLT_BOOL'
+  187 |     DECL_VALUE_NUMBER_BASE(bool)                                                                                       \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:21:
+./third_party/base/plugin-sdk/game_sa/engine/Pad.h:264:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  264 | DECL_VALUE_ADDR_U8(bSniperAimWithRightStick, BYBIT(0x6AAD0E, 0x88631A)); // no .got slot: addressed PC-relatively
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:349:5: note: expanded from macro 'DECL_VALUE_ADDR_U8'
+  349 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:21:
+./third_party/base/plugin-sdk/game_sa/engine/Pad.h:265:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  265 | DECL_VALUE_PLT_FLT(m_fLastCarCheatScroll, BYBIT(0x67761C, 0x84CC68));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:21:
+./third_party/base/plugin-sdk/game_sa/engine/Pad.h:266:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  266 | DECL_VALUE_PLT_FLT(m_fLastMissionSkipScroll, BYBIT(0x676B14, 0x84B670));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:21:
+./third_party/base/plugin-sdk/game_sa/engine/Pad.h:267:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  267 | DECL_VALUE_PLT_FLT(m_fLastCheatScroll, BYBIT(0x6762F0, 0x84A640));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:21:
+./third_party/base/plugin-sdk/game_sa/engine/Pad.h:268:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  268 | DECL_VALUE_PLT_U8(m_bMapPadOneToPadTwo, BYBIT(0x679924, 0x851268));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:21:
+./third_party/base/plugin-sdk/game_sa/engine/Pad.h:269:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  269 | DECL_VALUE_PLT_U8(m_bDebugCamPCOn, BYBIT(0x6767F4, 0x84B040));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:21:
+./third_party/base/plugin-sdk/game_sa/engine/Pad.h:270:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  270 | DECL_VALUE_ADDR_U8(bSniperAllowMovement, BYBIT(0x959ACE, 0xBC2992)); // no .got slot: addressed PC-relatively
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:349:5: note: expanded from macro 'DECL_VALUE_ADDR_U8'
+  349 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:22:
+./third_party/base/plugin-sdk/game_sa/engine/Sprite.h:88:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   88 | DECL_VALUE_PLT_FLT(m_f2DNearScreenZ, BYBIT(0x678688, 0x84ED38));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:22:
+./third_party/base/plugin-sdk/game_sa/engine/Sprite.h:89:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   89 | DECL_VALUE_PLT_FLT(m_f2DFarScreenZ, BYBIT(0x6799B8, 0x851388));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:22:
+./third_party/base/plugin-sdk/game_sa/engine/Sprite.h:90:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   90 | DECL_VALUE_PLT_FLT(m_fRecipNearClipPlane, BYBIT(0x678000, 0x84E020));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:22:
+./third_party/base/plugin-sdk/game_sa/engine/Sprite.h:91:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+   91 | DECL_VALUE_PLT_U32(m_bFlushSpriteBufferSwitchZTest, BYBIT(0x679538, 0x850A80));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:24:
+./third_party/base/plugin-sdk/game_sa/engine/Zones.h:120:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  120 | DECL_VALUE_PLT_U16(TotalNumberOfNavigationZones, BYBIT(0x676508, 0x84AA68));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:237:5: note: expanded from macro 'DECL_VALUE_PLT_U16'
+  237 |     DECL_VALUE_NUMBER_BASE(u16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:24:
+./third_party/base/plugin-sdk/game_sa/engine/Zones.h:121:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  121 | DECL_VALUE_PLT_U16(TotalNumberOfInfoZones, BYBIT(0x6787D8, 0x84EFD8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:237:5: note: expanded from macro 'DECL_VALUE_PLT_U16'
+  237 |     DECL_VALUE_NUMBER_BASE(u16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:24:
+./third_party/base/plugin-sdk/game_sa/engine/Zones.h:123:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  123 | DECL_VALUE_PLT_U16(TotalNumberOfMapZones, BYBIT(0x677408, 0x84C848));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:237:5: note: expanded from macro 'DECL_VALUE_PLT_U16'
+  237 |     DECL_VALUE_NUMBER_BASE(u16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/src/npcai/game_bridge.cpp:24:
+./third_party/base/plugin-sdk/game_sa/engine/Zones.h:125:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  125 | DECL_VALUE_PLT_U32(TotalNumberExploredTerritories, BYBIT(0x67743C, 0x84C8B0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+147 warnings generated.
+[arm64-v8a] SharedLibrary  : libnpcai.so
+[arm64-v8a] Install        : libnpcai.so => libs/arm64-v8a/libnpcai.so
+ELF OK: ARM64, AML exports, páginas 16 KiB; NEEDED=libc.so, libdl.so, liblog.so, libm.so

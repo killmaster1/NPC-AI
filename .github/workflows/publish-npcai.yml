@@ -35,3 +35,40 @@ jobs:
             with zipfile.ZipFile(p) as z:assert z.testzip() is None
           PY
           gh release upload "$RELEASE_TAG" "$INSTALL_PATH" "$SOURCE_PATH" --repo "$GITHUB_REPOSITORY" --clobber
+      - name: Build optional Kokoro model and 20 MB source packages
+        env:
+          SOURCE_PATH: ${{ inputs.source_zip }}
+        run: |
+          python3 - <<'PY'
+          import pathlib,zipfile,shutil,hashlib,os
+          out=pathlib.Path('release-extra');out.mkdir(exist_ok=True)
+          parts=sorted(pathlib.Path('downloads/modelo-20MB').glob('*.zip'))
+          if len(parts)==17:
+            model=out/'NPC_AI_Kokoro_PTBR_FP32.zip'
+            with model.open('wb') as target:
+              for index,p in enumerate(parts,1):
+                with zipfile.ZipFile(p) as z:
+                  name='NPC_AI_Kokoro_PTBR_FP32.zip.part%03d'%index
+                  with z.open(name) as fragment:shutil.copyfileobj(fragment,target)
+            assert hashlib.file_digest(model.open('rb'),'sha256').hexdigest()=='04c02b1424e3757a42f9ddd0702f4f9845e7fcae5df512e2ed7f63df6c07e77a'
+            with zipfile.ZipFile(model) as z:assert z.testzip() is None
+            for p in parts:shutil.copy2(p,out/p.name)
+          source=pathlib.Path(os.environ['SOURCE_PATH']);sha=hashlib.file_digest(source.open('rb'),'sha256').hexdigest();pieces=[]
+          with source.open('rb') as f:
+            while data:=f.read(19900000):pieces.append(data)
+          checks=''.join(hashlib.sha256(b).hexdigest()+'  '+source.name+'.part%03d\n'%(i+1) for i,b in enumerate(pieces))
+          for i,b in enumerate(pieces,1):
+            p=out/('NPC_AI_Fontes_Parte_%03d_de_%03d.zip'%(i,len(pieces)))
+            with zipfile.ZipFile(p,'w',zipfile.ZIP_STORED) as z:
+              z.writestr(source.name+'.part%03d'%i,b);z.writestr(source.name+'.partes.sha256',checks);z.writestr(source.name+'.sha256',sha+'  '+source.name+'\n')
+              z.writestr('LEIA-ME.txt','Extraia todas as partes ZIP na mesma pasta. Reconstrua: cat '+source.name+'.part[0-9][0-9][0-9] > '+source.name+'\nConfira os SHA-256 fornecidos e extraia o ZIP reconstruído.\n')
+            assert p.stat().st_size<20000000
+          PY
+      - name: Upload optional model and smaller permanent ZIP assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release upload "$RELEASE_TAG" release-extra/*.zip --repo "$GITHUB_REPOSITORY" --clobber

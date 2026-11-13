@@ -1,0 +1,52 @@
+#include "settings.h"
+#include "gemini_client.h"
+#include "diagnostics.h"
+#include "provider_startup.h"
+#include <filesystem>
+#include <fstream>
+#include <iostream>
+#include <stdexcept>
+#include <chrono>
+#include <thread>
+using namespace npcai;
+namespace fs=std::filesystem;
+#define CHECK(x) do{if(!(x))throw std::runtime_error(#x);}while(0)
+static fs::path root;
+static Settings Read(const std::string& text){auto p=root/"npcai.ini";{std::ofstream f(p,std::ios::binary);f<<text;}return LoadSettings(p.string());}
+static void Wait(const std::function<bool()>& condition){for(int i=0;i<400;++i){if(condition())return;std::this_thread::sleep_for(std::chrono::milliseconds(5));}throw std::runtime_error("worker deadline");}
+static std::string Response(){return JsonValue{{"status",200},{"body",JsonValue{{"candidates",JsonValue::array({{{"content",{{"parts",JsonValue::array({{{"text","OK"}}})}}}}})}}.dump()}}.dump();}
+static void Missing(){auto s=LoadSettings((root/"missing.ini").string());CHECK(!s.configuration.found && s.configuration.valid && !s.geminiEnabled && s.radius==3);}
+static void Empty(){auto s=Read("");CHECK(s.configuration.found && s.configuration.valid && s.configuration.accepted==0);}
+static void ValidGemini(){auto s=Read("npc_ai_transport=native\ngemini_enabled=1\ngemini_key_storage=ini\ngemini_key_action=none\ngemini_api_key=fake-key-test\n");CHECK(s.configuration.valid && s.geminiEnabled && s.geminiApiKey=="fake-key-test" && SelectedTransport(s)=="android_https_gemini");}
+static void ExplicitMock(){auto s=Read("gemini_enabled=0\nnpc_ai_transport=native\n");std::atomic_bool cancel{false};GeminiClient c(s,{});CHECK(SelectedTransport(s)=="native_mock" && c.Chat({}, {},JsonValue::array(),cancel).ok);}
+static void Comments(){auto s=Read("# comentário\n  # outro\n; comentário\n[gemini]\ngemini_enabled=1 # sim\ngemini_key_storage=ini ; teste\ngemini_api_key=fake-key # segredo omitido\n");CHECK(s.configuration.valid && s.geminiEnabled && s.geminiApiKey=="fake-key");}
+static void WhitespaceBom(){auto s=Read("\xef\xbb\xbf  gemini_enabled \t= 1 \r\n  gemini_model = gemini-test \r\ngemini_api_key = fake-key \t\r\n");CHECK(s.configuration.valid && s.geminiEnabled && s.geminiModel=="gemini-test" && s.geminiApiKey=="fake-key");}
+static void Duplicate(){auto s=Read("gemini_enabled=0\ngemini_enabled = 1\nradius=5\nradius=nan\n");CHECK(s.geminiEnabled && s.radius==5 && !s.configuration.valid && !s.configuration.warnings.empty());}
+static void InvalidIndependent(){auto s=Read("radius=nan\nbubble_height=nan\ngemini_enabled=1\ngemini_max_retries=999\nhistory_limit=30\n");CHECK(s.radius==3 && s.bubbleHeight==1.75f && s.historyLimit==30 && s.geminiEnabled && !s.providerConfigError.empty());}
+static void LongLine(){auto s=Read("gemini_enabled=1\ngemini_api_key="+std::string(5000,'x')+"\nradius=4\n");CHECK(!s.configuration.valid && s.geminiEnabled && s.radius==4 && s.geminiApiKey.empty() && !s.providerConfigError.empty());}
+static void LargeFile(){auto s=Read("gemini_enabled=1\n"+std::string(70000,'#'));CHECK(!s.configuration.valid && s.geminiEnabled && !s.providerConfigError.empty());}
+static void MissingKey(){auto s=Read("gemini_enabled=1\ngemini_key_storage=ini\ngemini_api_key=\n");std::atomic_bool cancel{false};GeminiClient c(s,[](const std::string&,const std::string&,int,const std::atomic_bool&){return "{\"status\":0,\"error\":\"credential_missing\"}";});auto result=c.Chat({}, {},JsonValue::array(),cancel);CHECK(!result.ok && result.text.find("credencial")!=std::string::npos && s.geminiEnabled);}
+static void KeyLength(){auto s=Read("gemini_enabled=1\ngemini_api_key="+std::string(256,'A')+"\n");CHECK(s.configuration.valid && s.geminiApiKey.size()==256);s=Read("gemini_enabled=1\ngemini_api_key="+std::string(257,'A')+"\n");CHECK(!s.configuration.valid && s.geminiApiKey.empty() && s.geminiEnabled);}
+static void HttpsUnavailable(){Settings s;s.geminiEnabled=true;GeminiClient c(s,{});std::atomic_bool cancel{false};CHECK(!c.Chat({}, {},JsonValue::array(),cancel).ok);}
+static void Selection(){auto s=Read("gemini_enabled = 1\ngemini_api_key=fake-key\n");int calls=0;GeminiClient c(s,[&](const std::string&,const std::string&,int,const std::atomic_bool&){++calls;return Response();});std::atomic_bool cancel{false};auto result=c.Chat({}, {},JsonValue::array(),cancel);CHECK(result.ok && result.text=="OK" && calls==1);}
+static void NoSilentFallback(){auto s=Read("gemini_enabled = talvez\n");CHECK(s.geminiEnabled && !s.providerConfigError.empty());GeminiClient c(s,{});std::atomic_bool cancel{false};CHECK(!c.Chat({}, {},JsonValue::array(),cancel).ok);s=Read("gemini_enabled=1\ngemini_model=bad/model\n");GeminiClient bad(s,{});CHECK(!bad.Chat({}, {},JsonValue::array(),cancel).ok);}
+static void LoaderDiscovery(){auto data=root/"files",config=root/"configs";fs::create_directories(data);fs::create_directories(config);{std::ofstream f(config/"npcai.ini");f<<"gemini_enabled=1\n";}auto s=LoadSettingsFromLoader(data.string()+"///",config.string());CHECK(s.geminiEnabled && s.configuration.path==(config/"npcai.ini").string());{std::ofstream f(data/"npcai.ini");f<<"gemini_enabled=0\n";}s=LoadSettingsFromLoader(data.string()+"///",config.string());CHECK(!s.geminiEnabled && s.configuration.path==(data/"npcai.ini").string());CHECK(LoadSettingsFromLoader("","").configuration.path.empty());}
+static void JavaFailureContained(){Settings s;s.geminiEnabled=true;bool localInitialized=false;auto service=PrepareNativeProvider(s,[](const Settings&,std::string&)->std::string{throw std::runtime_error("secret-never-log");},[]{return "{}";});localInitialized=true;CHECK(localInitialized && !service.available && service.error=="jni_configuration" && s.geminiEnabled);service=PrepareNativeProvider(s,[](const Settings&,std::string&){return "{\"body\":\"private/path\"}";},[]{return "{\"https_available\":true,\"internet\":1,\"credential_present\":true}";});CHECK(service.available && service.internet==1 && service.credential && service.privateDirectory=="private/path");}
+static void RedactedExport(){auto s=Read("gemini_enabled=1\ngemini_api_key=secret-never-log\ntoken=secret-local-token\nradius=secret-invalid-value\n");Diagnostics diag(s,{},root.string());diag.Services(false,1,true,"secret-never-log");diag.Bridge(true);diag.Live("NPC disponível",true,true);diag.ObserveHttps("{\"status\":403,\"error\":\"secret-never-log\",\"body\":\"private-content\"}");auto report=diag.Report();for(const auto* secret:{"secret-never-log","secret-local-token","secret-invalid-value","private-content"})CHECK(report.find(secret)==std::string::npos);CHECK(report.find("403")!=std::string::npos);CHECK(diag.Get().gameBridgeReady);CHECK(diag.Export());Wait([&]{return diag.Get().exportStatus.find("exportado")!=std::string::npos;});std::ifstream f(root/"npcai-diagnostic.txt");std::string exported((std::istreambuf_iterator<char>(f)),{});CHECK(exported==diag.Report());}
+static void AsyncTestSuccess(){Settings s;s.geminiEnabled=true;Diagnostics diag(s,[](const std::string&,const std::string& body,int,const std::atomic_bool&){CHECK(body.size()<512 && JsonValue::parse(body)["generationConfig"]["maxOutputTokens"]==32);std::this_thread::sleep_for(std::chrono::milliseconds(60));return Response();},root.string());diag.Services(true,1,true,"");const auto start=std::chrono::steady_clock::now();CHECK(diag.TestGemini());CHECK(std::chrono::steady_clock::now()-start<std::chrono::milliseconds(40));CHECK(!diag.TestGemini());Wait([&]{return !diag.Get().testing;});CHECK(diag.Get().lastHttp==200 && diag.Get().testStatus.find("Sucesso")!=std::string::npos);}
+static void AsyncTestFailureAndShutdown(){Settings s;s.geminiEnabled=true;Diagnostics missing(s,{},root.string());missing.TestGemini();Wait([&]{return !missing.Get().testing;});CHECK(missing.Get().testStatus.find("indisponível")!=std::string::npos);Diagnostics pending(s,[](const std::string&,const std::string&,int,const std::atomic_bool& cancel){while(!cancel)std::this_thread::sleep_for(std::chrono::milliseconds(2));return "{\"error\":\"cancelled\"}";},root.string());pending.Services(true,1,true,"");pending.TestGemini();std::this_thread::sleep_for(std::chrono::milliseconds(15));auto start=std::chrono::steady_clock::now();pending.Shutdown();CHECK(std::chrono::steady_clock::now()-start<std::chrono::milliseconds(250));}
+static void UnsupportedEncoding(){auto s=Read(std::string("\xff\xfeG\0e\0m\0",8));CHECK(!s.configuration.valid && s.geminiEnabled && !s.providerConfigError.empty());s=Read("GEMINI_ENABLED = 1\n");CHECK(s.configuration.valid && s.geminiEnabled);}
+static void DottedAndQuotedCredentials(){
+    for(const auto& value:{std::string("fake.test-key_123"),std::string("\"fake.test-key_123\""),std::string("'fake.test-key_123'")}){
+        auto s=Read("gemini_enabled=1\ngemini_key_storage=ini\ngemini_api_key="+value+"\n");
+        CHECK(s.configuration.valid && s.providerConfigError.empty() && s.geminiApiKey=="fake.test-key_123");
+        auto service=PrepareNativeProvider(s,[](const Settings& settings,std::string&){CHECK(settings.geminiApiKey=="fake.test-key_123");return "{}";},[]{return "{\"https_available\":true,\"internet\":1,\"credential_present\":true}";});
+        CHECK(service.available && service.credential);
+        Diagnostics diag(s,{},root.string());CHECK(diag.Report().find("fake.test-key_123")==std::string::npos);
+    }
+    for(const auto& value:{"fake key","fake\rkey","\"fake.test-key","fake.test-key\"","fake/key"}){
+        auto s=Read(std::string("gemini_enabled=1\ngemini_api_key=")+value+"\n");CHECK(!s.configuration.valid && !s.providerConfigError.empty());
+    }
+}
+static void ExampleIni(){auto s=LoadSettings("config/npcai.ini");CHECK(s.configuration.found && s.configuration.valid && s.configuration.accepted>=58 && s.configuration.warnings.empty());}
+int main(){root=fs::temp_directory_path()/("npcai-configuration-"+SessionId());fs::create_directories(root);int count=0;try{for(auto test:{Missing,Empty,ValidGemini,ExplicitMock,Comments,WhitespaceBom,Duplicate,InvalidIndependent,LongLine,LargeFile,MissingKey,KeyLength,HttpsUnavailable,Selection,NoSilentFallback,LoaderDiscovery,JavaFailureContained,RedactedExport,AsyncTestSuccess,AsyncTestFailureAndShutdown,UnsupportedEncoding,DottedAndQuotedCredentials,ExampleIni}){test();++count;}}catch(const std::exception& e){std::cerr<<"Configuration scenario "<<count+1<<": "<<e.what()<<"\n";fs::remove_all(root);return 1;}fs::remove_all(root);std::cout<<"Configuration/diagnostics: "<<count<<" host scenarios passed (Android/GTA pending)\n";}

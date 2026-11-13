@@ -1,0 +1,5 @@
+[ 20%] Built target ucd
+[ 95%] Built target espeak-ng
+[ 95%] Building CXX object CMakeFiles/npcai_piper.dir/workspace/npcai-android-starter/third_party/tts/piper-src/libpiper/src/piper.cpp.o
+[100%] Linking CXX shared library libnpcai_piper.so
+[100%] Built target npcai_piper

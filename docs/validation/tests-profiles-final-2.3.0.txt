@@ -1,0 +1,1 @@
+Kokoro profiles/spatial/config: 15 host scenarios passed

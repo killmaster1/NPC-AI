@@ -1,0 +1,1 @@
+REAL HOST backend: missing voice, SHA256 mismatch, verified model/session reuse and final DONE audio chunk passed. samples=42240 rate=22050; Android playback pending

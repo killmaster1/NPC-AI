@@ -1,0 +1,6 @@
+test_native_eleven_https_mocked (test_eleven_java.ElevenJava.test_native_eleven_https_mocked) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.351s
+
+OK

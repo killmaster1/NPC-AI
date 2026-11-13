@@ -1,0 +1,10 @@
+ALTERADO .github/workflows/build.yml
+ALTERADO android/br/com/npcai/NativeServices.java
+ALTERADO config/npcai.ini
+ALTERADO native/generated/editor_dex.h
+ALTERADO native/main.cpp
+ALTERADO native/src/npcai/diagnostics.h
+ALTERADO native/src/npcai/settings.cpp
+ALTERADO tests/java/br/com/npcai/NativeServicesJvmTest.java
+ALTERADO tests/test_configuration.cpp
+ALTERADO tools/package.py

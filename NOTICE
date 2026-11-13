@@ -1,0 +1,11 @@
+NPC AI 2.4.0 — integration code GPL-3.0-or-later; see LICENSE.
+Sherpa-ONNX 1.12.23: Apache-2.0, https://github.com/k2-fsa/sherpa-onnx
+Kokoro-82M / cristianoaredes/kokoro-pt-br: Apache-2.0 as declared by model card.
+eSpeak NG exact fork f6fed6c58b5e0998b8e68c6610125e2d07d595a7: GPL-3.0-or-later and component notices, included corresponding source.
+Sherpa reuses piper-phonemize (MIT) for phonemization; no Piper TTS inference engine or Piper voice is loaded/distributed by this version.
+ONNX Runtime 1.22.0 Android: MIT; bundled LICENSE and ThirdPartyNotices.txt.
+Other Sherpa dependencies retain notices in tts/licenses and source CMake.
+No GTA binaries, APK, credentials, player saves or private memories are distributed.
+See docs/KOKORO_LICENSES.md for source and redistribution details.
+PicoSHA2: MIT, corresponding header and license in third_party/picosha2.
+ElevenLabs is an external API/service, not an included voice model; account, API and voice permissions apply. No vendor API credentials are distributed.

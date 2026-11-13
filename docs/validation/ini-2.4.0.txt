@@ -1,0 +1,2 @@
+valid=1 transport=android_https_gemini tts=1 model=kokoro-pt-br voice=pm_alex variation=1 volume=0.85 threads=2 credential_present=0
+tts_errors=0 provider_errors=0

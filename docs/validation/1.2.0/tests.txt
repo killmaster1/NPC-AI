@@ -1,0 +1,65 @@
+PASS UTF-8/JSON
+PASS seleção/invalidação
+PASS wrap/reload
+PASS memória/limites
+PASS resposta atrasada
+PASS limpeza concorrente
+PASS shutdown cancelável
+PASS limite resposta
+8 testes nativos aprovados
+PASS balão clicável/envio direto 640x360
+PASS layout 640x360
+PASS balão clicável/envio direto 1280x720
+PASS layout 1280x720
+PASS balão clicável/envio direto 1920x1080
+PASS layout 1920x1080
+PASS balão clicável/envio direto 720x1280
+PASS layout 720x1280
+PASS captura/restauração de gestos touch
+test_sdk_early_guard (test_compat.Compatibility.test_sdk_early_guard) ... ok
+test_blocked_empty_response (test_gemini.Gemini.test_blocked_empty_response) ... ok
+test_contract_and_history (test_gemini.Gemini.test_contract_and_history) ... ok
+test_environment (test_gemini.Gemini.test_environment) ... ok
+test_invalid_model (test_gemini.Gemini.test_invalid_model) ... ok
+test_malformed_payload (test_gemini.Gemini.test_malformed_payload) ... ok
+test_mode_routes_and_saves (test_gemini.Gemini.test_mode_routes_and_saves) ... ok
+test_reply_bound_utf8 (test_gemini.Gemini.test_reply_bound_utf8) ... ok
+test_requires_key (test_gemini.Gemini.test_requires_key) ... ok
+test_timeout_and_http_errors (test_gemini.Gemini.test_timeout_and_http_errors) ... ok
+test_cancel_real_socket (test_server.NativeHTTP.test_cancel_real_socket) ... ok
+test_duplicate_length (test_server.NativeHTTP.test_duplicate_length) ... ok
+test_invalid_utf8_reply (test_server.NativeHTTP.test_invalid_utf8_reply) ... ok
+test_large_http (test_server.NativeHTTP.test_large_http) ... ok
+test_native_utf8_dynamic_and_auth (test_server.NativeHTTP.test_native_utf8_dynamic_and_auth) ... ok
+test_offline (test_server.NativeHTTP.test_offline) ... ok
+test_status_error (test_server.NativeHTTP.test_status_error) ... ok
+test_timeout (test_server.NativeHTTP.test_timeout) ... ok
+test_truncated_http (test_server.NativeHTTP.test_truncated_http) ... ok
+test_auth (test_server.Tests.test_auth) ... ok
+test_bad_ids (test_server.Tests.test_bad_ids) ... ok
+test_concurrency_limit (test_server.Tests.test_concurrency_limit) ... ok
+test_content_type (test_server.Tests.test_content_type) ... ok
+test_context_validation (test_server.Tests.test_context_validation) ... ok
+test_conversation_namespace (test_server.Tests.test_conversation_namespace) ... ok
+test_dynamic_identifiers (test_server.Tests.test_dynamic_identifiers) ... ok
+test_health (test_server.Tests.test_health) ... ok
+test_history_bound (test_server.Tests.test_history_bound) ... ok
+test_invalid_body (test_server.Tests.test_invalid_body) ... ok
+test_isolation (test_server.Tests.test_isolation) ... ok
+test_lru_memory_bound (test_server.Tests.test_lru_memory_bound) ... ok
+test_message_bound (test_server.Tests.test_message_bound) ... ok
+test_mock_memory (test_server.Tests.test_mock_memory) ... ok
+test_mock_simulation (test_server.Tests.test_mock_simulation) ... ok
+test_persistence (test_server.Tests.test_persistence) ... ok
+test_persistence_byte_bound (test_server.Tests.test_persistence_byte_bound) ... ok
+test_personas (test_server.Tests.test_personas) ... ok
+test_provider_failure_is_not_saved (test_server.Tests.test_provider_failure_is_not_saved) ... ok
+test_reset (test_server.Tests.test_reset) ... ok
+test_reset_discards_late_response (test_server.Tests.test_reset_discards_late_response) ... ok
+test_responses_api_contract (test_server.Tests.test_responses_api_contract) ... ok
+test_utf8 (test_server.Tests.test_utf8) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.593s
+
+OK

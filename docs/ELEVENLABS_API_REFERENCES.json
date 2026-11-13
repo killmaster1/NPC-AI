@@ -1,0 +1,14 @@
+{
+  "url": "https://api.elevenlabs.io/openapi.json",
+  "sha256": "defd23ab2aa66e1fe07d4dca960ad58573e44c0d56e5eb003d80e2801e5ee9e5",
+  "date": "2026-11-13",
+  "endpoints": [
+    "POST /v1/text-to-speech/{voice_id}?output_format=pcm_24000",
+    "GET /v2/voices?page_size=100"
+  ],
+  "models": [
+    "eleven_v3",
+    "eleven_flash_v2_5"
+  ],
+  "note": "Schema official; live API/voice permissions not exercised without credentials."
+}

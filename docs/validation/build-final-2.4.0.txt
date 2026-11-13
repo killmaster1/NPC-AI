@@ -1,0 +1,329 @@
+Dependências verificadas: 368 arquivos vendorizados
+[arm64-v8a] Compile++      : npcai <= native_keyboard.cpp
+[arm64-v8a] Compile++      : npcai <= main.cpp
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:416:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  416 | DECL_VALUE_PLT_I16(s_ConversationLength, BYBIT(0x675F2C, 0x849EC8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:417:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  417 | DECL_VALUE_PLT_U8(s_bForceAudible, BYBIT(0x6761AC, 0x84A3B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:420:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  420 | DECL_VALUE_PLT_I16(s_NextSpeechSlot, BYBIT(0x679308, 0x850628));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:423:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  423 | DECL_VALUE_PLT_I16(s_pConversationPedSlot1, BYBIT(0x676374, 0x84A740));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:424:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  424 | DECL_VALUE_PLT_I16(s_pConversationPedSlot2, BYBIT(0x676D9C, 0x84BB80));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:426:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  426 | DECL_VALUE_PLT_U8(s_bPedConversationHappening, BYBIT(0x678928, 0x84F270));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:427:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  427 | DECL_VALUE_PLT_U8(s_bPlayerConversationHappening, BYBIT(0x677ADC, 0x84D5E0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:428:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  428 | DECL_VALUE_PLT_U8(s_bAllSpeechDisabled, BYBIT(0x678468, 0x84E8E8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:429:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  429 | DECL_VALUE_PLT_U8(s_bAPlayerSpeaking, BYBIT(0x678390, 0x84E738));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:430:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  430 | DECL_VALUE_PLT_U32(s_nCJMoodOverrideTime, BYBIT(0x679138, 0x850298));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:431:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  431 | DECL_VALUE_PLT_I16(s_nCJBasicMood, BYBIT(0x6762F8, 0x84A650));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:432:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  432 | DECL_VALUE_PLT_I16(s_nCJGangBanging, BYBIT(0x67705C, 0x84C0F0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:433:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  433 | DECL_VALUE_PLT_I16(s_nCJFat, BYBIT(0x679A54, 0x8514C8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:434:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  434 | DECL_VALUE_PLT_I16(s_nCJWellDressed, BYBIT(0x676340, 0x84A6D8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:796:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  796 | DECL_VALUE_PLT_I16(s_NextDummyEngineSlot, BYBIT(0x6766C8, 0x84ADE8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:797:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+  797 | DECL_VALUE_PLT_U8(s_HelicoptorsDisabled, BYBIT(0x676D74, 0x84BB30));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:255:5: note: expanded from macro 'DECL_VALUE_PLT_U8'
+  255 |     DECL_VALUE_NUMBER_BASE(u8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1083:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1083 | DECL_VALUE_PLT_FLT(m_sfRainVolume, BYBIT(0x678250, 0x84E4B8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1084:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1084 | DECL_VALUE_PLT_I16(m_snLastRainDropSoundID, BYBIT(0x67782C, 0x84D080));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:228:5: note: expanded from macro 'DECL_VALUE_PLT_I16'
+  228 |     DECL_VALUE_NUMBER_BASE(i16)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1105:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1105 | DECL_VALUE_PLT_I8(m_snLastFireFrequencyIndex, BYBIT(0x676460, 0x84A918));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:219:5: note: expanded from macro 'DECL_VALUE_PLT_I8'
+  219 |     DECL_VALUE_NUMBER_BASE(i8)                                                                                         \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1189:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1189 | DECL_VALUE_PLT_U32(s_NextNewScannerDialogueTime, BYBIT(0x676C3C, 0x84B8C0));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1197:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1197 | DECL_VALUE_PLT_U32(s_nPlaybackStartTime, BYBIT(0x6762BC, 0x84A5D8));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1198:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1198 | DECL_VALUE_PLT_U32(s_nAbortPlaybackTime, BYBIT(0x679904, 0x851228));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:203:5: note: expanded from macro 'DECL_VALUE_PLT_U32'
+  203 |     DECL_VALUE_NUMBER_BASE(u32)                                                                                        \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+In file included from ./native/main.cpp:3:
+In file included from ./third_party/base/plugin-sdk/game_sa/Events.h:5:
+In file included from ./third_party/base/plugin-sdk/game_sa/other/Explosion.h:11:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEScriptAudioEntity.h:4:
+In file included from ./third_party/base/plugin-sdk/game_sa/audio/AEDoorAudioEntity.h:4:
+./third_party/base/plugin-sdk/game_sa/audio/AEAudioEntity.h:1202:1: warning: 'const' type qualifier on return type has no effect [-Wignored-qualifiers]
+ 1202 | DECL_VALUE_PLT_FLT(s_fVolumeOffset, BYBIT(0x678588, 0x84EB28));
+      | ^
+./native/compat/plugin-sdk/sdk_base.h:273:5: note: expanded from macro 'DECL_VALUE_PLT_FLT'
+  273 |     DECL_VALUE_NUMBER_BASE(float)                                                                                      \
+      |     ^
+./native/compat/plugin-sdk/sdk_base.h:106:5: note: expanded from macro 'DECL_VALUE_NUMBER_BASE'
+  106 |     const bool operator!() { return (Get() == (const _type)0); }                                                       \
+      |     ^
+23 warnings generated.
+[arm64-v8a] SharedLibrary  : libnpcai.so
+[arm64-v8a] Install        : libnpcai.so => libs/arm64-v8a/libnpcai.so
+ELF OK: ARM64, AML exports, páginas 16 KiB; NEEDED=libc.so, libdl.so, liblog.so, libm.so

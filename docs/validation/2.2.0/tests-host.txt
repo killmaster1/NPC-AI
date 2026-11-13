@@ -1,0 +1,123 @@
+Class voices: 17 host scenarios passed; real GTA voices pending
+Voice controller: 20 deterministic host scenarios passed; AudioTrack/GTA pending
+Configuration/diagnostics: 23 host scenarios passed (Android/GTA pending)
+Intelligence native: 22 host scenarios passed; Android/JNI device validation pending
+PASS UTF-8/JSON
+PASS seleção/invalidação
+PASS wrap/reload
+PASS memória/limites
+PASS resposta atrasada
+PASS limpeza concorrente
+PASS shutdown cancelável
+PASS limite resposta
+PASS projeção e cauda do balão
+PASS editor cancelar/reabrir
+PASS editor retorno tardio/thread
+PASS foco do NPC e liberação
+PASS configuração dos balões
+13 testes nativos aprovados
+Persistent animations: 22 host scenarios passed (no GTA device)
+Action controller: 18 scenarios passed (fake engine; device validation pending)
+PASS balão clicável/envio direto 640x360
+PASS layout 640x360
+PASS balão clicável/envio direto 1280x720
+PASS layout 1280x720
+PASS balão clicável/envio direto 1920x1080
+PASS layout 1920x1080
+PASS balão clicável/envio direto 720x1280
+PASS layout 720x1280
+PASS captura/restauração de gestos touch
+PASS editor ativo/cancelar/reabrir/trocar/remover NPC/envio
+PASS balão/IME/erro separado com Gemini indisponível
+PASS diagnóstico acessível sem NPC selecionado
+test_cpp_structured_roundtrip (test_actions_server.Protocol.test_cpp_structured_roundtrip) ... ok
+test_feedback_passed_to_provider (test_actions_server.Protocol.test_feedback_passed_to_provider) ... ok
+test_invalid_model_reply_is_safe (test_actions_server.Protocol.test_invalid_model_reply_is_safe) ... ok
+test_isolated_actions (test_actions_server.Protocol.test_isolated_actions) ... ok
+test_money_config_rejects_excess (test_actions_server.Protocol.test_money_config_rejects_excess) ... ok
+test_nonce_validation (test_actions_server.Protocol.test_nonce_validation) ... ok
+test_provider_plaintext_compatibility (test_actions_server.Protocol.test_provider_plaintext_compatibility) ... ok
+test_structured_http (test_actions_server.Protocol.test_structured_http) ... ok
+test_duplicate_and_extra_fields (test_actions_server.Validation.test_duplicate_and_extra_fields) ... ok
+test_feedback (test_actions_server.Validation.test_feedback) ... ok
+test_instructions_receipts (test_actions_server.Validation.test_instructions_receipts) ... ok
+test_legacy_safe (test_actions_server.Validation.test_legacy_safe) ... ok
+test_mock_personality (test_actions_server.Validation.test_mock_personality) ... ok
+test_money_bounds (test_actions_server.Validation.test_money_bounds) ... ok
+test_ordinary_greeting_without_physical_action (test_actions_server.Validation.test_ordinary_greeting_without_physical_action) ... ok
+test_provider_prompt_separates_speech_from_posture (test_actions_server.Validation.test_provider_prompt_separates_speech_from_posture) ... ok
+test_schema_contract (test_actions_server.Validation.test_schema_contract) ... ok
+test_unknown_action (test_actions_server.Validation.test_unknown_action) ... ok
+test_valid_utf8 (test_actions_server.Validation.test_valid_utf8) ... ok
+test_wire_bound (test_actions_server.Validation.test_wire_bound) ... ok
+test_default_tls_rejects_untrusted_certificate (test_android_services.AndroidServicesJVM.test_default_tls_rejects_untrusted_certificate) ... ok
+test_services_on_jvm (test_android_services.AndroidServicesJVM.test_services_on_jvm) ... ok
+test_sdk_early_guard (test_compat.Compatibility.test_sdk_early_guard) ... ok
+test_blocked_empty_response (test_gemini.Gemini.test_blocked_empty_response) ... ok
+test_contract_and_history (test_gemini.Gemini.test_contract_and_history) ... ok
+test_environment (test_gemini.Gemini.test_environment) ... ok
+test_invalid_model (test_gemini.Gemini.test_invalid_model) ... ok
+test_malformed_payload (test_gemini.Gemini.test_malformed_payload) ... ok
+test_mode_routes_and_saves (test_gemini.Gemini.test_mode_routes_and_saves) ... ok
+test_reply_bound_utf8 (test_gemini.Gemini.test_reply_bound_utf8) ... ok
+test_requires_key (test_gemini.Gemini.test_requires_key) ... ok
+test_timeout_and_http_errors (test_gemini.Gemini.test_timeout_and_http_errors) ... ok
+test_pcm_validation_and_integrity_without_android_playback (test_native_audio.NativeAudioJVM.test_pcm_validation_and_integrity_without_android_playback) ... ok
+test_different_robbery_reactions (test_reactive.Personality.test_different_robbery_reactions) ... ok
+test_informal_commands (test_reactive.Personality.test_informal_commands) ... ok
+test_isolated_and_clear_safe (test_reactive.Personality.test_isolated_and_clear_safe) ... ok
+test_stable_by_identity (test_reactive.Personality.test_stable_by_identity) ... ok
+test_trait_validation (test_reactive.Personality.test_trait_validation) ... ok
+test_variation_disabled (test_reactive.Personality.test_variation_disabled) ... ok
+test_429_retry_after (test_reactive.Retries.test_429_retry_after) ... ok
+test_503_then_success (test_reactive.Retries.test_503_then_success) ... ok
+test_budget_from_native_client (test_reactive.Retries.test_budget_from_native_client) ... ok
+test_credentials_model_not_retried (test_reactive.Retries.test_credentials_model_not_retried) ... ok
+test_failed_provider_does_not_add_npc_error_to_history (test_reactive.Retries.test_failed_provider_does_not_add_npc_error_to_history) ... ok
+test_incomplete_network_read_retried (test_reactive.Retries.test_incomplete_network_read_retried) ... ok
+test_limited_503 (test_reactive.Retries.test_limited_503) ... ok
+test_retry_produces_one_proposal (test_reactive.Retries.test_retry_produces_one_proposal) ... ok
+test_total_budget (test_reactive.Retries.test_total_budget) ... ok
+test_bad_parameters_keep_dialogue (test_reactive.Speech.test_bad_parameters_keep_dialogue) ... ok
+test_natural_history_and_separate_events (test_reactive.Speech.test_natural_history_and_separate_events) ... ok
+test_old_structured_memory_migration (test_reactive.Speech.test_old_structured_memory_migration) ... ok
+test_retry_request_idempotent (test_reactive.Speech.test_retry_request_idempotent) ... ok
+test_technical_old_text_removed (test_reactive.Speech.test_technical_old_text_removed) ... ok
+test_unknown_keeps_valid_dialogue (test_reactive.Speech.test_unknown_keeps_valid_dialogue) ... ok
+test_cancel_real_socket (test_server.NativeHTTP.test_cancel_real_socket) ... ok
+test_duplicate_length (test_server.NativeHTTP.test_duplicate_length) ... ok
+test_invalid_utf8_reply (test_server.NativeHTTP.test_invalid_utf8_reply) ... ok
+test_large_http (test_server.NativeHTTP.test_large_http) ... ok
+test_native_utf8_dynamic_and_auth (test_server.NativeHTTP.test_native_utf8_dynamic_and_auth) ... ok
+test_offline (test_server.NativeHTTP.test_offline) ... ok
+test_status_error (test_server.NativeHTTP.test_status_error) ... ok
+test_timeout (test_server.NativeHTTP.test_timeout) ... ok
+test_truncated_http (test_server.NativeHTTP.test_truncated_http) ... ok
+test_auth (test_server.Tests.test_auth) ... ok
+test_bad_ids (test_server.Tests.test_bad_ids) ... ok
+test_concurrency_limit (test_server.Tests.test_concurrency_limit) ... ok
+test_content_type (test_server.Tests.test_content_type) ... ok
+test_context_validation (test_server.Tests.test_context_validation) ... ok
+test_conversation_namespace (test_server.Tests.test_conversation_namespace) ... ok
+test_dynamic_identifiers (test_server.Tests.test_dynamic_identifiers) ... ok
+test_health (test_server.Tests.test_health) ... ok
+test_history_bound (test_server.Tests.test_history_bound) ... ok
+test_invalid_body (test_server.Tests.test_invalid_body) ... ok
+test_isolation (test_server.Tests.test_isolation) ... ok
+test_lru_memory_bound (test_server.Tests.test_lru_memory_bound) ... ok
+test_message_bound (test_server.Tests.test_message_bound) ... ok
+test_mock_memory (test_server.Tests.test_mock_memory) ... ok
+test_mock_simulation (test_server.Tests.test_mock_simulation) ... ok
+test_persistence (test_server.Tests.test_persistence) ... ok
+test_persistence_byte_bound (test_server.Tests.test_persistence_byte_bound) ... ok
+test_personas (test_server.Tests.test_personas) ... ok
+test_provider_failure_is_not_saved (test_server.Tests.test_provider_failure_is_not_saved) ... ok
+test_reset (test_server.Tests.test_reset) ... ok
+test_reset_discards_late_response (test_server.Tests.test_reset_discards_late_response) ... ok
+test_responses_api_contract (test_server.Tests.test_responses_api_contract) ... ok
+test_utf8 (test_server.Tests.test_utf8) ... ok
+
+----------------------------------------------------------------------
+Ran 86 tests in 7.285s
+
+OK

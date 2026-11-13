@@ -1,0 +1,9 @@
+pt_BR-faber-medium sample_rate=22050 audio_ms=4806 resident=1 weights=63221984
+pt_BR-cadu-medium sample_rate=22050 audio_ms=5572 resident=2 weights=126443968
+pt_BR-faber-medium sample_rate=22050 audio_ms=4702 resident=2 weights=126443968
+pt_BR-jeff-medium sample_rate=22050 audio_ms=4887 resident=2 weights=126443968
+pt_BR-faber-medium sample_rate=22050 audio_ms=4841 resident=2 weights=126443968
+pt_BR-edresson-low sample_rate=16000 audio_ms=5760 resident=2 weights=126326510
+pt_BR-cadu-medium sample_rate=22050 audio_ms=5572 resident=2 weights=126326510
+pt_BR-jeff-medium sample_rate=22050 audio_ms=4887 resident=2 weights=126443968
+REAL HOST MULTIVOICE: 8 switches/utterances, mono PCM, LRU 1/2 sessions and eSpeak shared lifetime passed; GTA validation pending

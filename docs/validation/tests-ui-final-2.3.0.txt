@@ -1,0 +1,12 @@
+PASS balão clicável/envio direto 640x360
+PASS layout 640x360
+PASS balão clicável/envio direto 1280x720
+PASS layout 1280x720
+PASS balão clicável/envio direto 1920x1080
+PASS layout 1920x1080
+PASS balão clicável/envio direto 720x1280
+PASS layout 720x1280
+PASS captura/restauração de gestos touch
+PASS editor ativo/cancelar/reabrir/trocar/remover NPC/envio
+PASS balão/IME/diagnóstico preservados com Gemini e Kokoro indisponíveis
+PASS diagnóstico acessível sem NPC selecionado

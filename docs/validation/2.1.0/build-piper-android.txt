@@ -1,0 +1,70 @@
+CMake Warning (deprecated) at /workspace/toolchains/android-ndk-r27d/build/cmake/android.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /workspace/npcai-android-starter/build/piper-android/CMakeFiles/4.4.4/CMakeSystem.cmake:6 (include)
+  CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at /workspace/toolchains/android-ndk-r27d/build/cmake/android-legacy.toolchain.cmake:35 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /workspace/toolchains/android-ndk-r27d/build/cmake/android.toolchain.cmake:55 (include)
+  /workspace/npcai-android-starter/build/piper-android/CMakeFiles/4.4.4/CMakeSystem.cmake:6 (include)
+  CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at /workspace/toolchains/android-ndk-r27d/build/cmake/flags.cmake:18 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /workspace/piper-build-tools/cmake/data/share/cmake-4.4/Modules/Platform/Android-Clang.cmake:23 (include)
+  /workspace/piper-build-tools/cmake/data/share/cmake-4.4/Modules/Platform/Android-Clang-C.cmake:1 (include)
+  /workspace/piper-build-tools/cmake/data/share/cmake-4.4/Modules/CMakeCInformation.cmake:48 (include)
+  CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at /workspace/npcai-android-starter/third_party/tts/espeak-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Configuration:
+--   shared: OFF
+--   mbrola: OFF (MBROLA_BIN-NOTFOUND)
+--   libsonic: OFF (SONIC_LIB-NOTFOUND SONIC_INC-NOTFOUND)
+--   libpcaudio: OFF (PCAUDIO_LIB-NOTFOUND PCAUDIO_INC-NOTFOUND)
+--   klatt: OFF
+--   speech-player: OFF
+--   async: OFF
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/npcai-android-starter/build/piper-android
+[ 18%] Built target ucd
+[ 94%] Built target espeak-ng
+[ 97%] Building CXX object CMakeFiles/npcai_piper.dir/workspace/npcai-android-starter/third_party/tts/piper-src/libpiper/src/piper.cpp.o
+[100%] Linking CXX shared library libnpcai_piper.so
+[100%] Built target npcai_piper
+runtime/arm64-v8a/libnpcai_ort.so Android ARM64, standard deps, 16 KiB LOAD OK: libc.so,libdl.so,liblog.so,libm.so
+runtime/arm64-v8a/libnpcai_piper.so Android ARM64, standard deps, 16 KiB LOAD OK: libc.so,libdl.so,libm.so
