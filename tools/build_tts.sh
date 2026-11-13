@@ -6,12 +6,7 @@ npcai_ndk="${ANDROID_NDK_HOME:-${ANDROID_NDK_ROOT:-}}"
 [[ -f "$npcai_ndk/build/cmake/android.toolchain.cmake" ]] || { echo 'Defina ANDROID_NDK_HOME para r27d';exit 1; }
 npcai_source="${NPC_AI_SHERPA_SOURCE:-$PWD/build/sherpa-source}"
 if [[ ! -f "$npcai_source/CMakeLists.txt" ]];then
- python3 - "$npcai_source" <<'PY'
-import pathlib,sys,json,hashlib,tarfile
-r=pathlib.Path('.');lock=json.loads((r/'tts/dependencies.json').read_text());p=r/'third_party/sherpa/source/sherpa-v1.12.23.tar.gz'
-assert hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==lock['sherpa_source_sha256']
-with tarfile.open(p) as t:t.extractall(sys.argv[1],filter='data')
-PY
+ python3 tools/extract_sherpa.py "$npcai_source"
 fi
 export SHERPA_ONNXRUNTIME_INCLUDE_DIR="$PWD/third_party/onnxruntime/include"
 export SHERPA_ONNXRUNTIME_LIB_DIR="$PWD/third_party/onnxruntime/android"

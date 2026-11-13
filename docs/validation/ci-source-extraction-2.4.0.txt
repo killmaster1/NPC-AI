@@ -1,0 +1,3 @@
+CI 43471584124: extração segura recusou links absolutos presentes em exemplos Go do arquivo upstream Sherpa.
+Correção: extrair somente arquivos regulares e diretórios, manter tarfile filter=data e verificar SHA-256 fixado.
+Validado com arquivo upstream real e testes de links, traversal e integridade. Nenhuma mudança de runtime.
