@@ -1,0 +1,37 @@
+name: Publish permanent NPC AI release assets
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag
+        required: true
+      install_zip:
+        description: Repository path of install ZIP
+        required: true
+      source_zip:
+        description: Repository path of corresponding-source ZIP
+        required: true
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and upload permanent release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          INSTALL_PATH: ${{ inputs.install_zip }}
+          SOURCE_PATH: ${{ inputs.source_zip }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os,zipfile,pathlib
+          for key in ['INSTALL_PATH','SOURCE_PATH']:
+            p=pathlib.Path(os.environ[key]);assert p.suffix=='.zip' and p.is_file()
+            with zipfile.ZipFile(p) as z:assert z.testzip() is None
+          PY
+          gh release upload "$RELEASE_TAG" "$INSTALL_PATH" "$SOURCE_PATH" --repo "$GITHUB_REPOSITORY" --clobber
