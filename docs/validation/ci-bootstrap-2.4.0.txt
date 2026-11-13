@@ -1,0 +1,1 @@
+First GitHub CI run 43469879040: host tests passed; android-actions/setup-android@v3 attempted obsolete default SDK package tools, which is unavailable in the current repository. Fixed setup input packages=platform-tools; NDK remains pinned to 27.3.13750724. This is CI bootstrap configuration only; no plugin behavior changed.
