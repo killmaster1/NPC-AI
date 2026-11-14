@@ -57,6 +57,7 @@ void DiagnosticPanel(float scale,ImVec2 screen){
                 ImGui::TextWrapped("%s",v.creditStatus.c_str());if(ImGui::Button("Limpar cache de áudio"))voice->Control("clear_cache");
             }
             const bool canSpeed=engine==0 || config.elevenModel=="eleven_flash_v2_5";ImGui::BeginDisabled(!canSpeed);changed=ImGui::SliderFloat("Velocidade",&speed,.7f,1.2f)||changed;ImGui::EndDisabled();
+            if(engine==0)ImGui::TextWrapped("Kokoro FP32: frases preservadas; ritmo discreto. Compare Alex, Santa e Dora. Sem tags emocionais ou pitch artificial.");
             if(!canSpeed)ImGui::TextWrapped("v3: entonação pelo texto/tags; speed não é enviado.");
             changed=ImGui::SliderFloat("Volume",&volume,0.f,1.f)||changed;changed=ImGui::Checkbox("Áudio espacial estéreo",&spatial)||changed;
             if(changed)voice->Configure(enabled,npcai::KokoroVoices[selected],speed,volume,spatial);

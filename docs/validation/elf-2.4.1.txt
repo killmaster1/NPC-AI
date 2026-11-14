@@ -1,0 +1,1 @@
+ELF OK: ARM64, AML exports, páginas 16 KiB; NEEDED=libc.so, libdl.so, liblog.so, libm.so

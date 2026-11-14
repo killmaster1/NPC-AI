@@ -1,5 +1,6 @@
 #include "tts.h"
 #include "memory_store.h"
+#include "kokoro_prosody.h"
 #include <algorithm>
 #include <cmath>
 #include <chrono>
@@ -49,8 +50,8 @@ bool VoiceManager::BusyFor(const std::string& npc)const{std::lock_guard<std::mut
 std::optional<VoiceEvent> VoiceManager::TakeEvent(){std::lock_guard<std::mutex> lock(mutex_);if(events_.empty())return {};auto e=events_.front();events_.pop_front();return e;}
 bool VoiceManager::Current(const Job& job)const{std::lock_guard<std::mutex> lock(mutex_);return !stop_ && epoch_==job.epoch && (job.test || (npc_==job.npc && conversation_==job.conversation));}
 void VoiceManager::Event(const Job& job,bool start){std::lock_guard<std::mutex> lock(mutex_);if(start && (epoch_!=job.epoch || job.test))return;if(job.test)return;if(events_.size()>=8)events_.pop_front();events_.push_back({job.npc,job.conversation,start,false,{}});}
-std::vector<std::string> VoiceManager::Segments(const std::string& text){std::vector<std::string> result;size_t first=0,lastSpace=0;for(size_t i=0;i<text.size();++i){if(text[i]==' ')lastSpace=i;if(((text[i]=='.' || text[i]=='!' || text[i]=='?' || text[i]=='\n') && i-first>12) || i-first>=180){size_t end=i+1;if(i-first>=180 && lastSpace>first)end=lastSpace+1;while(end<text.size() && (static_cast<unsigned char>(text[end])&0xc0)==0x80)++end;result.push_back(text.substr(first,end-first));first=end;i=end-1;lastSpace=first;}}if(first<text.size())result.push_back(text.substr(first));return result;}
-float VoiceManager::ProfileSpeed(const std::string& id,float speed){uint32_t hash=2166136261u;for(unsigned char c:id)hash=(hash^c)*16777619u;return std::clamp(speed*(.98f+(hash%5)*.01f),.6f,1.5f);}
+std::vector<std::string> VoiceManager::Segments(const std::string& text){return KokoroSegments(text);}
+float VoiceManager::ProfileSpeed(const std::string&,float speed){return std::clamp(speed,.6f,1.5f);}
 void VoiceManager::Watch(){std::unique_lock<std::mutex> lock(mutex_);std::shared_ptr<std::atomic_bool> interrupted;
  while(!stop_){cv_.wait_for(lock,std::chrono::milliseconds(40));
   if(activeCancel_ && deadline_ && Ms()>deadline_){*activeCancel_=true;state_.error="Prazo de síntese/reprodução excedido";}
@@ -90,14 +91,14 @@ void VoiceManager::Run(){
   }
   return true;
  };
- const float speed=backend_->Online()?Options().ttsSpeed:ProfileSpeed(job.npc,Options().ttsSpeed);const auto cacheKey=loadedModel+"@"+job.profile.voice+"@"+job.text+"@"+std::to_string(speed);
+ const auto options=Options();const float speed=backend_->Online()?options.ttsSpeed:KokoroProsodySpeed(options.ttsSpeed,job.context,options.ttsKokoroProsody);const auto cacheKey=loadedModel+"@"+job.profile.voice+"@"+job.text+"@"+std::to_string(speed);
  auto found=cache.find(cacheKey);
  if(ok && valid() && !backend_->Online() && settings_.ttsCache && found!=cache.end()){ok=pcm(found->second.pcm.data(),found->second.pcm.size(),found->second.rate);std::lock_guard<std::mutex> lock(mutex_);++state_.cacheHits;}
  else if(ok && valid()){
   for(const auto& segment:backend_->Online()?std::vector<std::string>{job.text}:Segments(job.text)){
    auto start=Ms();uint64_t playbackMs=0;
    ok=backend_->Generate(segment,speed,*cancel,[&](const float* data,size_t count,int hz){
-    if(!valid() || !data || hz<8000 || hz>48000 || count>static_cast<size_t>(hz)*(backend_->Online()?40:20))return false;
+    if(!valid() || !data || hz<8000 || hz>48000 || count>static_cast<size_t>(hz)*40)return false;
     std::vector<int16_t> values(count);double square=0;for(size_t i=0;i<count;++i){float f=std::isfinite(data[i])?std::clamp(data[i],-1.f,1.f):0;values[i]=static_cast<int16_t>(f*32767);square+=f*f;}
     {std::lock_guard<std::mutex> lock(mutex_);state_.rms=count?std::sqrt(square/count):0;}
     if(!backend_->Online() && settings_.ttsCache && complete.size()+count<=1024*1024)complete.insert(complete.end(),values.begin(),values.end());else complete.clear();

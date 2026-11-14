@@ -27,7 +27,8 @@ Settings LoadSettings(const std::string& path) {
     std::ifstream f(path,std::ios::binary);
     if(!f){if(report.found){issue("INI inacessível; verifique permissão de leitura");s.geminiEnabled=true;s.providerConfigError="INI inacessível";}s.configuration=std::move(report);return s;}
     auto apply=[&](const std::string& key,const std::string& v)->bool {
-        if(key=="elevenlabs_api_key"){
+        if(key=="npc_tts_kokoro_prosody"){if(v!="0" && v!="1")throw std::runtime_error("kokoro_prosody");s.ttsKokoroProsody=v=="1";
+        }else if(key=="elevenlabs_api_key"){
             auto value=v;if(value.size()>=2 && value.front()=='"' && value.back()=='"')value=value.substr(1,value.size()-2);
             if(value.size()>512 || value.find_first_of(" \t\r\n")!=std::string::npos)throw std::runtime_error("credential");
             s.elevenKey=value;

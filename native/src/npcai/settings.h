@@ -13,6 +13,7 @@ bool geminiEnabled=false,legacyHttp=false,memoryEnabled=true,memoryPersistent=tr
 int geminiTimeoutMs=25000,geminiRetries=2,memoryAutosaveSeconds=10,memoryMaxMb=10,worldIntervalMs=500,maxExpectations=3,contextTokens=2048,spontaneousCooldownS=60,spontaneousBudgetHour=4;
 float perplexityGain=1.f;
 std::string geminiModel="gemini-2.5-flash-lite",geminiApiKey,credentialStorage="keystore",credentialAction="none",memoryProfile="auto",reactionMode="economy";
+bool ttsKokoroProsody=true;
 bool ttsEnabled=true,ttsSync=true,ttsStopDistance=true,ttsCache=true,ttsSpatial=true,ttsVariation=true;
 float ttsVolume=.85f,ttsSpeed=1.f,ttsMaxDistance=15.f;int ttsThreads=2,ttsTimeoutMs=45000,ttsIdleSeconds=0,ttsMinMemoryMb=900;
 std::string ttsEngine="kokoro",elevenModel="eleven_v3",elevenKey,elevenStorage="keystore",elevenKeyAction="none",elevenVoices,elevenModelVoices,elevenCharacterVoices,elevenAssignment="character_id";

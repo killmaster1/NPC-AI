@@ -31,7 +31,7 @@ static void Shutdown(){F f;f.synth->block=true;f.Say();Wait([&]{return f.synth->
 static void Queue(){F f;f.synth->block=true;f.Say();Wait([&]{return f.synth->runs==1;});for(int n=0;n<30;++n)f.Say("Mensagem "+std::to_string(n));f.synth->block=false;f.Done();CHECK(f.synth->loads==1 && f.synth->runs<32 && f.voice->Status().approxBytes<70000000);}
 static void AudioFailure(){F f;f.audio->fail=true;f.Say();f.Done();CHECK(!f.voice->Status().error.empty() && !f.voice->Status().playing);}
 static void TextBound(){F f;CHECK(!f.voice->Speak("A","c1",std::string(1201,'x')));CHECK(!f.voice->Speak("A","c1",std::string("x\0y",3)));CHECK(!f.voice->Speak("A","c1",std::string(1,static_cast<char>(0xff))));}
-static void Segments(){std::string text;for(int n=0;n<50;++n)text+="Mano, tá ligado? Ação, coração! ";auto parts=VoiceManager::Segments(text);std::string joined;for(auto& part:parts){CHECK(ValidUtf8(part) && part.size()<190);joined+=part;}CHECK(joined==text);}
+static void Segments(){std::string text;for(int n=0;n<50;++n)text+="Mano, tá ligado? Ação, coração! ";auto parts=VoiceManager::Segments(text);std::string joined;for(auto& part:parts){CHECK(ValidUtf8(part) && part.size()<=320);joined+=part;}CHECK(joined==text);}
 static void Profile(){CHECK(VoiceManager::ProfileSpeed("A",1)==VoiceManager::ProfileSpeed("A",1));CHECK(VoiceManager::ProfileSpeed("A",1.5f)<=1.5f);}
 static void TestWithoutNpc(){F f;f.voice->Bind("","",0,false,false);CHECK(f.voice->Test());f.voice->Bind("","",0,false,false);f.Done();CHECK(f.audio->written>0 && !f.voice->TakeEvent());}
 static void Timeout(){Settings s;s.ttsTimeoutMs=50;F f(s);f.synth->block=true;f.Say();f.Done();CHECK(f.audio->written==0 && f.voice->Status().error.find("Prazo")!=std::string::npos);}

@@ -5,7 +5,7 @@
 #include <thread>
 namespace npcai {
 struct DiagnosticSnapshot {
-    std::string version="2.4.0",iniPath,transport,model,lastError,testStatus="Não executado",exportStatus;
+    std::string version="2.4.1",iniPath,transport,model,lastError,testStatus="Não executado",exportStatus;
     bool iniFound=false,configValid=true,geminiEnabled=false,httpsAvailable=false,credentialPresent=false,gameBridgeReady=false;
     int internet=-1,lastHttp=0;bool testing=false;
     std::string selection="Aguardando GameBridge",bubbles="Aguardando projeção";

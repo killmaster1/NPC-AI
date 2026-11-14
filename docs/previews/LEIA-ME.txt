@@ -1,0 +1,1 @@
+Previas geradas por inferencia FP32 real no Linux, com o backend desta versao. Mesma frase, velocidade 1.0, sem efeitos. Nao sao gravacoes do GTA/Android nem provam melhora perceptiva. Frase: Qual foi, parceiro! Ta ligado, mano? Acao, coracao e cafe.

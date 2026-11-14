@@ -1,3 +1,11 @@
+# 2.4.1 — Fluidez Kokoro
+
+- Frases mantidas inteiras ate 320 bytes, preservando abreviaturas, decimais, reticencias e UTF-8; corte de seguranca prioriza pausas.
+- Abreviacoes de chat expandidas somente na sintese offline; metadados nao sao pronunciados.
+- Ritmo emocional discreto e opcional; removida variacao arbitraria de velocidade por identidade. Sem pitch artificial.
+- FP32 e speakers oficiais 42/43/44 preservados; nenhuma nova copia do modelo. Backend Kokoro descarta tambem a credencial ElevenLabs da copia de configuracao.
+- Nao ha promessa de qualidade equivalente ao ElevenLabs nem validacao Android por testes host.
+
 # Changelog
 
 ## 2.4.0

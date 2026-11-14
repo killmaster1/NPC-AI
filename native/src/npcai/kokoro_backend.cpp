@@ -1,6 +1,7 @@
 #include "tts.h"
 #include "memory_store.h"
 #include "tts_staging.h"
+#include "kokoro_prosody.h"
 #include "../../../third_party/sherpa/c-api.h"
 #include "../../generated/kokoro_model_hash.h"
 #include <dlfcn.h>
@@ -26,7 +27,7 @@ class KokoroTtsEngine final:public VoiceBackend {
  decltype(&SherpaOnnxOfflineTtsSampleRate) sampleRate_=nullptr;
  template<class T>bool Symbol(T& fn,const char* name){fn=reinterpret_cast<T>(dlsym(library_,name));return fn!=nullptr;}
 public:
- KokoroTtsEngine(Settings s,std::string root,std::string libs,std::function<std::string(const std::string&)> hash,std::string priv,std::string alt):settings_(std::move(s)),root_(std::move(root)),libs_(std::move(libs)),private_(std::move(priv)),alternate_(std::move(alt)),hash_(std::move(hash)){settings_.geminiApiKey.clear();settings_.http.token.clear();}
+ KokoroTtsEngine(Settings s,std::string root,std::string libs,std::function<std::string(const std::string&)> hash,std::string priv,std::string alt):settings_(std::move(s)),root_(std::move(root)),libs_(std::move(libs)),private_(std::move(priv)),alternate_(std::move(alt)),hash_(std::move(hash)){settings_.geminiApiKey.clear();settings_.http.token.clear();settings_.elevenKey.clear();}
  ~KokoroTtsEngine(){Unload();/* ORT process statics: keep code mapped until process exit. */}
  void Unload()override{if(engine_ && destroy_)destroy_(engine_);engine_=nullptr;bytes_=0;modelName_.clear();}
  uint64_t ModelBytes()const override{return bytes_;}
@@ -81,11 +82,13 @@ public:
   if(!engine_ || cancel || speaker_<42 || speaker_>44)return false;
   struct Callback {const std::atomic_bool& cancel;const std::function<bool(const float*,size_t,int)>& sink;int rate;bool delivered=false,failed=false;};
   Callback context{cancel,sink,rate_};
-  auto callback=[](const float* samples,int32_t n,void* opaque)->int32_t{auto& c=*static_cast<Callback*>(opaque);if(c.cancel || !samples || n<=0 || n>c.rate*20){c.failed=true;return 0;}
+  auto callback=[](const float* samples,int32_t n,void* opaque)->int32_t{auto& c=*static_cast<Callback*>(opaque);if(c.cancel || !samples || n<=0 || n>c.rate*40){c.failed=true;return 0;}
    for(int32_t i=0;i<n;++i)if(!std::isfinite(samples[i])){c.failed=true;return 0;}
    try{if(!c.sink(samples,static_cast<size_t>(n),c.rate)){c.failed=true;return 0;}c.delivered=true;return c.cancel?0:1;}catch(...){c.failed=true;return 0;}
   };
-  const auto* audio=generate_(engine_,text.c_str(),speaker_,speed,callback,&context);
+  const auto spoken=settings_.ttsKokoroProsody?KokoroSpokenText(text):PlainSpeech(text);
+  if(spoken.empty())return false;
+  const auto* audio=generate_(engine_,spoken.c_str(),speaker_,speed,callback,&context);
   const bool ok=audio && audio->n>0 && !cancel && context.delivered && !context.failed;
   if(audio)freeAudio_(audio);
   return ok;

@@ -4,6 +4,8 @@ cd "$(dirname "$0")/.."
 mkdir -p build
 npcai_cxx="${CXX:-g++}"
 npcai_flags=(-std=c++17 -O1 -g -Wall -Wextra -Wpedantic -Werror -pthread -Inative/src/npcai)
+"$npcai_cxx" "${npcai_flags[@]}" tests/tts/test_kokoro_prosody.cpp native/src/npcai/types.cpp -o build/test_kokoro_prosody
+./build/test_kokoro_prosody
 "$npcai_cxx" "${npcai_flags[@]}" -c native/src/npcai/actions.cpp -o build/actions.o
 "$npcai_cxx" "${npcai_flags[@]}" -c native/src/npcai/world_types.cpp -o build/world_types.o
 "$npcai_cxx" "${npcai_flags[@]}" tests/test_native.cpp native/src/npcai/{types,npc_action_controller,settings,registry,chat}.cpp build/actions.o build/world_types.o -o build/test_native

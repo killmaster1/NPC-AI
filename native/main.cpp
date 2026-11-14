@@ -20,7 +20,7 @@
 #include "src/npcai/eleven_backend.h"
 #include "src/npcai/tts.h"
 
-MYMOD(br.com.npcai.android, NPC_AI, 2.4.0, NPC_AI_Contributors)
+MYMOD(br.com.npcai.android, NPC_AI, 2.4.1, NPC_AI_Contributors)
 BEGIN_DEPLIST()
     ADD_DEPENDENCY_VER(net.rusjj.aml, 1.4)
 END_DEPLIST()
@@ -37,8 +37,8 @@ void Stop(){if(voice)voice->Shutdown();npcai::GameBridge::Stop();NpcUi::Shutdown
 ON_MOD_LOAD() {
     logger->SetTag("NPC_AI");
     if(!aml)return;
-    if(!aml->HasModOfVersion("net.rusjj.aml","1.4")){logger->Error("NPC AI 2.4.0: AML >=1.4 necessário");return;}
-    logger->Info("NPC AI 2.4.0: etapa 1, ABI do AML aceita");
+    if(!aml->HasModOfVersion("net.rusjj.aml","1.4")){logger->Error("NPC AI 2.4.1: AML >=1.4 necessário");return;}
+    logger->Info("NPC AI 2.4.1: etapa 1, ABI do AML aceita");
     std::string version;bool keyboardReady=false;
     try{keyboardReady=npcai::NativeKeyboard::Init(version);}catch(...){logger->Error("Editor JNI indisponível; conteúdo da exceção omitido");}
     if(version!="2.10"){logger->Error("Versão APK não confirmada como 2.10; integração da engine não instalada");return;}
@@ -95,9 +95,9 @@ ON_MOD_LOAD() {
         }catch(...){logger->Error("Kokoro worker unavailable; chat textual preservado");}
         npcai::AndroidServices::SetPauseObserver([weak=std::weak_ptr<npcai::IntelligenceRuntime>(intelligence),tts=std::weak_ptr<npcai::VoiceManager>(voice)]{if(auto engine=weak.lock())engine->Flush();if(auto v=tts.lock())v->Cancel();});
         npcai::GameBridge::AttachRuntime(intelligence);
-        logger->Info("NPC AI 2.4.0: etapa 2, iniciando GameBridge independentemente do provedor");
+        logger->Info("NPC AI 2.4.1: etapa 2, iniciando GameBridge independentemente do provedor");
         const bool bridgeReady=npcai::GameBridge::Init(*chat,settings);diagnostics->Bridge(bridgeReady);
-        logger->Info("NPC AI 2.4.0: etapa 3, iniciando ImGui/RW");
+        logger->Info("NPC AI 2.4.1: etapa 3, iniciando ImGui/RW");
         NpcUi::Init(*chat,settings.bubbleScreenOffsetY,diagnostics,voice);
         if(!ImGui_ImplRenderWare_Init(NpcUi::Draw)){logger->Error("RenderWare/ImGui indisponível");Stop();return;}
         Events::shutdownRwEvent.before += Stop;

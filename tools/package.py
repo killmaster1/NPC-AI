@@ -11,7 +11,7 @@ if not so.is_file():
     raise SystemExit('Compile primeiro: ./build.sh')
 dist = root / 'dist'
 dist.mkdir(exist_ok=True)
-zip_path = dist / 'NPC_AI_2.4.0_ARM64.zip'
+zip_path = dist / 'NPC_AI_2.4.1_ARM64.zip'
 items = []
 for name in ('android', 'native', 'server', 'config', 'tests', 'tools', 'docs', '.github', 'third_party', 'libs', 'tts', 'runtime'):
     items.extend(p for p in (root / name).rglob('*') if p.is_file())

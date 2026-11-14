@@ -1,4 +1,6 @@
-# NPC AI 2.4.0 — ElevenLabs e Kokoro
+# NPC AI 2.4.1 — fluidez Kokoro, ElevenLabs e voz offline
+
+Atualização 2.4.1: [ajustes de fluidez e roteiro de comparação Kokoro](docs/KOKORO_2_4_1.md).
 
 GTA San Andreas Android 2.10 ARM64 / AML >=1.4 / Android >=8. Gemini gera diálogos e metadados numa chamada. Eleven v3 usa tags controladas; Flash v2.5 funciona sem tags; Kokoro continua offline. Texto, balões, IME, ações, percepção e memória permanecem ativos se voz/rede falharem.
 

@@ -1,0 +1,6 @@
+Missing/corrupt files and unregistered model safely rejected
+Load ms 7793 resident=1 files=371301887
+Speaker 42 samples=122400 rms=0.0548688 synth_ms=7156
+Speaker 43 samples=124800 rms=0.0587291 synth_ms=5801
+Speaker 44 samples=126600 rms=0.0580946 synth_ms=6048
+Real FP32 synthesis + cooperative cancellation + unload/reload passed (Linux host only).
